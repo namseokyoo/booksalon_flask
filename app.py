@@ -11,7 +11,7 @@ from book_api import getbook
 
 
 load_dotenv()
-HOST = os.getenv('USERNAME')
+HOST = os.getenv('HOST')
 USERNAME = os.getenv('USERNAME')
 PASSWORD = os.getenv('PASSWORD')
 client = MongoClient('localhost', 27017)
@@ -131,3 +131,4 @@ def check_password():
 if __name__ == "__main__":
     # app.run(host='localhost', port=5000, debug='True')
     app.run(host='localhost', port=5000, debug='True')
+    # app.run(host='0.0.0.0', port=80, debug='True')
