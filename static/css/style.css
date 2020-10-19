@@ -33,6 +33,7 @@ textarea:focus {
 html {
     display: flex;
     justify-content: center;
+    min-width: 450px;
 }
 
 body {
@@ -75,21 +76,21 @@ nav {
 }
 
 .title {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     padding-bottom: 15px;
     color: rgba(0, 0, 0, 0.8);
 }
 .pub_date {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .author {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .publisher {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .logo__image {
@@ -105,9 +106,9 @@ nav {
     color: inherit;
 }
 .logo__title h1 {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bolder;
-    margin: 0px 50px;
+    margin: 0px 30px;
 }
 
 .logo__title a {

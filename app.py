@@ -14,12 +14,12 @@ load_dotenv()
 HOST = os.getenv('HOST')
 USERNAME = os.getenv('USERNAME')
 PASSWORD = os.getenv('PASSWORD')
-client = MongoClient('localhost', 27017)
-# client = MongoClient(HOST,
-#                      27017,
-#                      username=USERNAME,
-#                      password=PASSWORD,
-#                      authMechanism='SCRAM-SHA-1')
+# client = MongoClient('localhost', 27017)
+client = MongoClient(HOST,
+                     27017,
+                     username=USERNAME,
+                     password=PASSWORD,
+                     authMechanism='SCRAM-SHA-1')
 db = client.booksalon
 
 app = Flask(__name__)
@@ -129,5 +129,5 @@ def check_password():
 
 
 if __name__ == "__main__":
-    app.run(host='localhost', port=5000, debug='True')
-    # app.run(host='0.0.0.0', port=80, debug='True')
+    # app.run(host='localhost', port=5000, debug='True')
+    app.run(host='0.0.0.0', port=80, debug='True')
