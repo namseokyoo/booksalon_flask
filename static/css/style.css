@@ -33,7 +33,7 @@ textarea:focus {
 html {
     display: flex;
     justify-content: center;
-    min-width: 450px;
+    min-width: 400px;
 }
 
 body {
