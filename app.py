@@ -11,7 +11,7 @@ from book_api import getbook
 
 
 load_dotenv()
-HOST = os.getenv('USERNAME')
+HOST = os.getenv('HOST')
 USERNAME = os.getenv('USERNAME')
 PASSWORD = os.getenv('PASSWORD')
 # client = MongoClient('localhost', 27017)
@@ -28,8 +28,11 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     question_list = list(db.questions.find({}))
-    id = question_list[0]['_id']
-    return render_template('index.html', question_list=question_list)
+    if question_list == []:
+        return render_template('index.html')
+    else:
+        id = question_list[0]['_id']
+        return render_template('index.html', question_list=question_list)
 
 
 @app.route('/write_question', methods=['post'])
@@ -127,4 +130,4 @@ def check_password():
 
 if __name__ == "__main__":
     # app.run(host='localhost', port=5000, debug='True')
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=80, debug='True')
