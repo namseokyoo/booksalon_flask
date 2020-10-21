@@ -12,6 +12,7 @@ python-dotenv = "*"
 pymongo = "*"
 pytz = "*"
 shortuuid = "*"
+requests = "*"
 
 [requires]
 python_version = "3.8"
