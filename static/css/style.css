@@ -95,13 +95,12 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
-    /* vertical-align: middle; */
     width: 20px;
     height: 20px;
-    border-radius: 10px;
+    border-radius: 50%;
     background-color: #9b9b9b;
     color: white;
+    margin-left: 3px;
 }
 
 .write_question {

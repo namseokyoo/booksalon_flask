@@ -60,6 +60,7 @@ i {
     padding: 5px 5px;
     height: fit-content;
     min-height: 15vh;
+    line-height: 120%;
 }
 
 .detail__question__text::first-line {
