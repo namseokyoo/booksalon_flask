@@ -94,7 +94,8 @@ i {
 }
 
 .reply_text {
-    margin: 10px 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 120%;
 }
