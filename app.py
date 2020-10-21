@@ -62,7 +62,8 @@ def write_reply():
     reply_writer = request.form['reply-writer']
     reply_password = request.form['reply-password']
     reply_text = request.form['reply-text']
-    reply_time = datetime.now() + timedelta
+    reply_t = datetime.now() + timedelta(hours=9)
+    reply_time = reply_t.strftime('%Y/%m/%d %H:%M:%S')
 
     reply_db = {
         'reply_id': reply_id,
