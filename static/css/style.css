@@ -72,6 +72,7 @@ ul {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .question__bottom {
