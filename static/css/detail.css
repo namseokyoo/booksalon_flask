@@ -38,6 +38,7 @@ i {
 
 .question-info__column:last-child {
     margin-left: 5px;
+    font-weight: bold;
 }
 
 .detail__question-title {
