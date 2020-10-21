@@ -36,9 +36,14 @@ i {
     justify-content: center;
 }
 
+.question-info__column:last-child {
+    margin-left: 5px;
+}
+
 .detail__question-title {
     font-size: 14px;
     font-weight: 500;
+    line-height: 120%;
 }
 
 .detail__question-info__writer {
@@ -48,6 +53,7 @@ i {
 
 .post_time {
     font-size: 10px;
+    text-align: end;
 }
 
 .detail__question__text {
