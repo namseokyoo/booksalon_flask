@@ -59,6 +59,7 @@ body {
 ul {
     list-style: none;
     padding-left: 0px;
+    padding: 10px;
     border-top: var(--border_line);
     margin: 10px 0;
 }
