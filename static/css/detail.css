@@ -92,3 +92,9 @@ i {
     justify-content: space-between;
     font-size: 12px;
 }
+
+.reply_text {
+    margin: 10px 0px;
+    font-size: 14px;
+    line-height: 120%;
+}
