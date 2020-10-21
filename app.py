@@ -1,25 +1,26 @@
 import os
 
 import shortuuid
+import urllib
 from pytz import timezone
 from datetime import datetime, timedelta
 from flask import Flask, render_template, request, jsonify, redirect
 from pymongo import MongoClient
 from bson import ObjectId
 from dotenv import load_dotenv
-# from book_api import getbook
+from book_api import getbook
 
 
 load_dotenv()
 HOST = os.getenv('HOST')
 USERNAME = os.getenv('USERNAME')
 PASSWORD = os.getenv('PASSWORD')
-# client = MongoClient('localhost', 27017)
-client = MongoClient(HOST,
-                     27017,
-                     username=USERNAME,
-                     password=PASSWORD,
-                     authMechanism='SCRAM-SHA-1')
+client = MongoClient('localhost', 27017)
+# client = MongoClient(HOST,
+#                      27017,
+#                      username=USERNAME,
+#                      password=PASSWORD,
+#                      authMechanism='SCRAM-SHA-1')
 db = client.booksalon
 
 app = Flask(__name__)
@@ -27,12 +28,41 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    return render_template('index.html')
+
+
+@app.route('/search')
+def search():
+    param = request.args['param']
+    # query = urllib.parse.urlencode(param)
+    infos = getbook(param)
+    booklist = []
+    for info in infos:
+        title = info['title']
+        author = info['authors']
+        datetime = info['datetime']
+        isbn = info['isbn']
+        publisher = info['publisher']
+        book = {
+            "title": title,
+            "author": author,
+            "datetime": datetime,
+            "isbn": isbn,
+            "publisher": publisher
+        }
+        booklist += book
+        print(booklist)
+    return render_template('search.html', )
+
+
+@app.route('/bookboard')
+def bookboard():
     question_list = list(db.questions.find({}))
     if question_list == []:
-        return render_template('index.html')
+        return render_template('bookboard.html')
     else:
         id = question_list[0]['_id']
-        return render_template('index.html', question_list=question_list)
+        return render_template('bookboard.html', question_list=question_list)
 
 
 @app.route('/write_question', methods=['post'])
@@ -132,5 +162,5 @@ def check_password():
 
 
 if __name__ == "__main__":
-    # app.run(host='localhost', port=5000, debug='True')
-    app.run(host='0.0.0.0', port=80, debug='True')
+    app.run(host='localhost', port=5000, debug='True')
+    # app.run(host='0.0.0.0', port=80, debug='True')
