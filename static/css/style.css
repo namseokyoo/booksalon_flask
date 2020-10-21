@@ -109,7 +109,7 @@ ul {
 }
 
 .write {
-    width: 80px;
+    width: 100px;
     height: 25px;
     background-color: var(--blue);
     border-radius: 5px;

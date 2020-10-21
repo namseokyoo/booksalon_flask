@@ -41,7 +41,8 @@ def write_question():
     password = request.form['password']
     question_title = request.form['question_title']
     question = request.form['question']
-    time = datetime.now().strftime('%Y/%m/%d %H:%M:%S') + timedelta(hours=9)
+    t = datetime.now() + timedelta(hours=9)
+    time = t.strftime('%Y/%m/%d %H:%M:%S')
     q = {
         'writer': writer,
         'password': password,
