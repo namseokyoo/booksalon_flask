@@ -5,38 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <script src="static/js/function.js"></script>
     <title>Welcome to Booksalon</title>
 </head>
 
 <body>
-    <nav>
-        <div class="logo__image">
-            <img src="/">
-        </div>
-        <div class="logo__title">
-            <a href="/">
-                <h1>Book Salon</h1>
-            </a>
-        </div>
-        <div class="login">
-            <a class="login_link" href="/">
-                login
-            </a>
-        </div>
-    </nav>
-    <div class="book">
-        <div class="book__cover">
-            <img src="http://image.kyobobook.co.kr/images/book/xlarge/899/x9788965749899.jpg">
-        </div>
-        <div class="book__info">
-            <span class="title"> 우리의 불행은 당연하지 않습니다</span>
-            <span class="author">저자 | 김누리</span>
-            <span class="publisher">출판 | 해냄출판사</span>
-            <span class="pub_date">출간일 | 2020.3.6.</span>
-        </div>
-    </div>
-
+    {% include 'header.html' %}
+    {% include 'bookinfo.html' %}
 
     <div class="board">
         <div>
@@ -67,6 +44,7 @@
         <button class="write" type="button" onclick="location.href='/write'"><i
                 class="fas fa-question"></i><span>질문쓰기</span></button>
     </div>
+    {% include 'footer.html' %}
     <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
 </body>
 

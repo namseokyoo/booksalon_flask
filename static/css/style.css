@@ -1,8 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap");
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import "write.css";
 @import "detail.css";
 @import "variables.css";
 @import "check.css";
+@import "header.css";
+@import "bookinfo.css";
+@import "footer.css";
 
 * {
     font-family: "Noto Sans KR", sans-serif;
@@ -42,82 +46,8 @@ body {
     width: fit-content;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--blue);
-    color: white;
-    padding: 0px 30px;
-    height: 70px;
-    border-radius: 3px;
-}
-
-.book {
-    display: flex;
-    justify-content: flex-start;
-    margin: 20px 0px;
-    padding-bottom: 30px;
-    border-bottom: var(--border_line);
-    padding: 0px 10px;
-    padding-bottom: 15px;
-}
-
-.book__cover > img {
-    height: 150px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px;
-    margin-right: 20px;
-}
-
-.book__info > span {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.title {
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 15px;
-    color: rgba(0, 0, 0, 0.8);
-}
-.pub_date {
-    font-size: 12px;
-}
-
-.author {
-    font-size: 12px;
-}
-
-.publisher {
-    font-size: 12px;
-}
-
-.logo__image {
-    margin-right: auto;
-}
-
-.login {
-    margin-left: auto;
-}
-
-.login_link {
-    text-decoration: none;
-    color: inherit;
-}
-.logo__title h1 {
-    font-size: 24px;
-    font-weight: bolder;
-    margin: 0px 30px;
-}
-
-.logo__title a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .board__title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -129,14 +59,13 @@ nav {
 ul {
     list-style: none;
     padding-left: 0px;
+    border-top: var(--border_line);
+    margin: 10px 0;
 }
 
-ul {
-    border-top: var(--border_line);
-}
 .question__list {
     border-bottom: var(--border_line);
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 .question__top {
     display: flex;

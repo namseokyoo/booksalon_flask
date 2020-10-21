@@ -33,15 +33,17 @@ i {
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: column;
+    justify-content: center;
 }
 
 .detail__question-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
 .detail__question-info__writer {
     font-size: 12px;
+    margin-bottom: 2px;
 }
 
 .post_time {
@@ -53,12 +55,11 @@ i {
     border: 1px solid rgba(0, 0, 0, 0.3);
     font-size: 14px;
     margin-bottom: 10px;
+    margin-top: 5px;
     border-radius: 3px;
-    padding: 0px 5px;
-}
-
-.reply_question__text {
-    height: 15vh;
+    padding: 5px 5px;
+    height: fit-content;
+    min-height: 15vh;
 }
 
 .detail__question__text::first-line {

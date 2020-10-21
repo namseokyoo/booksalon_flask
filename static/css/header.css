@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--blue);
+    color: white;
+    padding: 0px 15px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.logo__image {
+    margin-right: auto;
+}
+
+.login {
+    margin-left: auto;
+}
+
+.login_link {
+    text-decoration: none;
+    color: inherit;
+}
+.logo__title h1 {
+    font-size: 18px;
+    font-weight: bolder;
+    /* margin: 0px 30px; */
+}
+
+.logo__title a {
+    text-decoration: none;
+    color: inherit;
+}

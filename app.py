@@ -2,7 +2,7 @@ import os
 
 import shortuuid
 from pytz import timezone
-from datetime import datetime
+from datetime import datetime, timedelta
 from flask import Flask, render_template, request, jsonify, redirect
 from pymongo import MongoClient
 from bson import ObjectId
@@ -41,7 +41,7 @@ def write_question():
     password = request.form['password']
     question_title = request.form['question_title']
     question = request.form['question']
-    time = datetime.now(timezone('Asia/Seoul'))
+    time = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
     q = {
         'writer': writer,
         'password': password,
@@ -61,7 +61,8 @@ def write_reply():
     reply_writer = request.form['reply-writer']
     reply_password = request.form['reply-password']
     reply_text = request.form['reply-text']
-    reply_time = datetime.now(timezone('Asia/Seoul'))
+    reply_time = datetime.now() + timedelta
+
     reply_db = {
         'reply_id': reply_id,
         'reply_writer': reply_writer,

@@ -2,21 +2,19 @@
     display: flex;
     justify-content: flex-start;
     padding: 5px;
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
-.question-info {
-    margin-bottom: 10px;
-}
-
-.question-info__writer {
+/* .question-info__writer {
     margin-right: 15px;
-}
+} */
 
-.question-info__wirter-input,
+.question-info__writer-input {
+    width: 35%;
+}
 .question-info__password-input {
-    width: 50%;
-    font-size: 14px;
+    width: 35%;
 }
 
 .question__title {
@@ -24,7 +22,8 @@
     margin-bottom: 10px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    font-size: 16px;
+    font-size: 14px;
+    border-radius: 0px;
 }
 
 .question__text {
@@ -34,7 +33,7 @@
     font-size: 14px;
     margin-bottom: 10px;
     border-radius: 3px;
-    padding: 0px 5px;
+    padding: 0px 2px;
     resize: none;
 }
 
