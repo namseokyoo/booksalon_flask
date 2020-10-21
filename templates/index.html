@@ -29,9 +29,11 @@
                     <div class="time">{{question.post_time}}</div>
                 </div>
                 <div class="question__bottom">
-                    <div class="question">
-                        <a href="/detail?id={{question._id}}">{{question.question_title}}</a>
-                    </div>
+
+                    <a href="/detail?id={{question._id}}">
+                        <div class="question">{{question.question_title}}</div>
+                    </a>
+
                     <div class="reply">
                         {{question.reply}}
                     </div>
