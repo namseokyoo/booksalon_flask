@@ -43,5 +43,5 @@ def getbook(booktitle):
     book_dict = json.loads(r.text)
 
     documents += book_dict['documents']
-
+    print(documents)
     return(documents)

@@ -13,7 +13,7 @@
     {% include 'bookinfo.html' %}
 
     <div class="board">
-        <form action="/write_question" method="post">
+        <form action="/write_question?book={{book.isbn}}" method="post">
             <div class="question-info">
                 <div class="question-info__writer">
                     <span>

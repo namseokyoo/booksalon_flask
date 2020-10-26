@@ -9,10 +9,14 @@
 @import "header.css";
 @import "bookinfo.css";
 @import "footer.css";
+@import "bookboard.css";
+@import "searchresult.css";
 
 * {
     font-family: "Noto Sans KR", sans-serif;
     box-sizing: border-box;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 html {

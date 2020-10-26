@@ -17,42 +17,42 @@
         <img src="static/img/library.jpg" />
         <div class="search-box__search-bar">
             <i class="fas fa-search fa-sm"></i>
-            <input type="text" class="search-box__input" placeholder="책 이름을 검색해 보세요" />
+            <form action="/search">
+                <input type="text" name="param" class="search-box__input" placeholder="책 이름을 검색해 보세요" />
+            </form>
         </div>
     </div>
 
-    <h3 class="recent">사람들이 많이 이야기 하고 있는 책</h3>
-    <div class="recent-book">
-        <div class="recent-book__info">
-            <div class="recent-book__image"><img src="https://img.ridicdn.net/cover/509000862/xxlarge"></div>
-            <div class="recent-book__title">보건교사 안은영</div>
-            <div class="recent-book__author">정세랑</div>
-        </div>
-        <div class="recent-book__info">
-            <div class="recent-book__image"><img src="https://img.ridicdn.net/cover/754029826/xxlarge"></div>
-            <div class="recent-book__title">트렌드 코리아 2021</div>
-            <div class="recent-book__author">김난도, 전미영 외7명</div>
-        </div>
-        <div class="recent-book__info">
-            <div class="recent-book__image"><img src="https://img.ridicdn.net/cover/510001020/xxlarge"></div>
-            <div class="recent-book__title">규칙 없음</div>
-            <div class="recent-book__author">리드 헤이스팅스, 에린 마이어 누구냐 이건</div>
-        </div>
-    </div>
-    <h3 class="recent">사람들이 최근 올린 질문</h3>
-    <div class="recent-question">
+    <h3 class="search-result">'{{param}}'검색결과</h3>
+    <div class="search-list">
         <ul>
-            <li>
-                <div class="recent-question__booktitle">
-                    우리의 불행은 당연하지 않습니다
+            {% for booklist in booklists%}
+            <li class="search-list__result">
+                <div class="result-column">
+                    <img src="{{booklist.imgUrl}}" />
                 </div>
-                <div class="recent-question__title">
-                    ????????
+                <div class="result-column">
+                    <a href="/bookboard?book={{booklist.isbn}}">
+                        <span class=" title"> {{booklist.title}}</span>
+                    </a>
+                    <div class="result-desc">
+                        {% for author in booklist.author %}
+                        <span class="author">{{author}}</span>
+                        {% endfor %}
+                        <span class="result-desc__desc divide"> |</span>
+                        <span class="result-desc__desc pub_date">{{booklist.pubdate}}</span>
+                        <span class="result-desc__desc divide"> |</span>
+                        <span class="result-desc__desc publisher">{{booklist.publisher}}</span>
+                        <span class="result-desc__desc divide"> |</span>
+                    </div>
+                    <p class="contents">{{booklist.contents}}</p>
                 </div>
-            </li>
 
+            </li>
+            {% endfor%}
         </ul>
     </div>
+
 
     {% include 'footer.html' %}
     <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>

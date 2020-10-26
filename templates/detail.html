@@ -34,7 +34,7 @@
             </p>
         </div>
         <div class="edit">
-            <button class="delete" type="button" onclick="location.href='/checkpw?id={{detail._id}}&type=q'">
+            <button class="delete" type="button" onclick="location.href='/checkpw?qid={{detail.q_id}}&type=q'">
                 <i class="fas fa-trash-alt"></i><span>삭제</span></button>
         </div>
 
@@ -48,7 +48,7 @@
                             {{reply.reply_writer}}
                         </div>
                         <div class="reply_time">{{reply.reply_time}} |
-                            <a href="/checkpw?id={{detail._id}}&reply_id={{reply.reply_id}}&type=reply"><i
+                            <a href="/checkpw?qid={{detail.q_id}}&reply_id={{reply.reply_id}}&type=reply"><i
                                     class="fas fa-trash-alt"></i></a>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
 
 
         <div class="reply_box">
-            <form action="/write_reply?id={{detail._id}}" method="post">
+            <form action="/write_reply?qid={{detail.q_id}}" method="post">
                 <div class="question-info">
                     <div class="question-info__writer">
                         <span>

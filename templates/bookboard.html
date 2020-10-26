@@ -15,6 +15,7 @@
     {% include 'header.html' %}
     {% include 'bookinfo.html' %}
 
+
     <div class="board">
         <div>
             <span class="board__title">질문리스트</span> <span class="board__desc"> | 책에대해 궁금한 질문들 입니다.</span>
@@ -30,7 +31,7 @@
                 </div>
                 <div class="question__bottom">
 
-                    <a href="/detail?id={{question._id}}">
+                    <a href="/detail?book={{book.isbn}}&qid={{question.q_id}}">
                         <div class="question">{{question.question_title}}</div>
                     </a>
 
@@ -43,7 +44,7 @@
         </ul>
     </div>
     <div class="write_question">
-        <button class="write" type="button" onclick="location.href='/write'"><i
+        <button class="write" type="button" onclick="location.href='/write?book={{book.isbn}}'"><i
                 class="fas fa-question"></i><span>질문쓰기</span></button>
     </div>
     {% include 'footer.html' %}
