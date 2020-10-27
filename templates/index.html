@@ -25,34 +25,31 @@
 
     <h3 class="recent">사람들이 많이 이야기 하고 있는 책</h3>
     <div class="recent-book">
+        {% for recent_booklist in recent_booklists %}
         <div class="recent-book__info">
-            <div class="recent-book__image"><img src="https://img.ridicdn.net/cover/509000862/xxlarge"></div>
-            <div class="recent-book__title">보건교사 안은영</div>
-            <div class="recent-book__author">정세랑</div>
+            <div class="recent-book__image"><img src="{{recent_booklist.imgUrl}}"></div>
+            <div class="recent-book__title">{{recent_booklist.title}}</div>
+            <div class="recent-book__author">{% for author in recent_booklist.author %}{{author}} {% endfor %}</div>
         </div>
-        <div class="recent-book__info">
-            <div class="recent-book__image"><img src="https://img.ridicdn.net/cover/754029826/xxlarge"></div>
-            <div class="recent-book__title">트렌드 코리아 2021</div>
-            <div class="recent-book__author">김난도, 전미영 외7명</div>
-        </div>
-        <div class="recent-book__info">
-            <div class="recent-book__image"><img src="https://img.ridicdn.net/cover/510001020/xxlarge"></div>
-            <div class="recent-book__title">규칙 없음</div>
-            <div class="recent-book__author">리드 헤이스팅스, 에린 마이어 누구냐 이건</div>
-        </div>
+        {% endfor %}
+
     </div>
     <h3 class="recent">사람들이 최근 올린 질문</h3>
     <div class="recent-question">
         <ul>
+            {% if recent_questionlists is defined %}
+            {% for recent_questionlist in recent_questionlists %}
             <li>
                 <div class="recent-question__booktitle">
-                    우리의 불행은 당연하지 않습니다
+                    {{recent_questionlist.question_title}}
                 </div>
                 <div class="recent-question__title">
-                    ????????
+                    {{recent_questionlist.question_title}}
                 </div>
             </li>
-
+            {% endfor %}
+            {% else %}
+            {% endif %}
         </ul>
     </div>
 

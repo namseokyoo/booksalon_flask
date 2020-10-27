@@ -28,7 +28,21 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    recent_booklist = list(db.booklists.find({}))
+    recent_questionlist = list(db.questions.find({}))
+    if recent_booklist == []:
+        if recent_questionlist == []:
+            return render_template('index.html')
+        else:
+            recent_questionlists = recent_questionlist[:5]
+            return render_template('index.html', recent_questionlists=recent_questionlists)
+    else:
+        recent_booklists = recent_booklist[:3]
+        if recent_questionlist == []:
+            return render_template('index.html', recent_booklists=recent_booklists)
+        else:
+            recent_questionlists = recent_questionlist[:5]
+            return render_template('index.html', recent_questionlists=recent_questionlists, recent_booklists=recent_booklists)
 
 
 @app.route('/search')
