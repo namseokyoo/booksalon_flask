@@ -1,5 +1,6 @@
 .search-box {
     height: 70px;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
@@ -41,10 +42,22 @@
 .search-box__input {
     border: none;
 }
+
+.content {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
 .recent {
     font-size: 14px;
     font-weight: bold;
+    align-self: flex-start;
 }
+
 .recent-book {
     display: flex;
     justify-content: space-between;
@@ -58,14 +71,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     margin: 0px 15px;
-    width: 150px;
+    width: 180px;
+    height: 180px;
     font-size: 12px;
     position: relative;
 }
 
-.recent-book__info div {
-    margin: 2px 0px;
+.recent-book__info__detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .recent-book__author {
@@ -77,12 +94,61 @@
 
 .recent-book__info img {
     height: 130px;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
 .recent-book__title {
     font-weight: bold;
+    height: 12px;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+@media (max-width: 630px) {
+    .recent-book {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .recent-book__info {
+        flex-direction: row;
+        align-items: center;
+        height: 150px;
+    }
+    .recent-book__author {
+        overflow: visible;
+        text-overflow: initial;
+    }
+    .recent-book__title {
+        overflow: visible;
+        text-overflow: initial;
+    }
+    .recent-book__info__detail {
+        margin-right: 10px;
+        align-items: flex-start;
+    }
+    .recent-book__title {
+        margin-bottom: 15px;
+        text-align: start;
+    }
 }
 
 .recent-question {
     margin-top: 10px;
+    width: 100%;
+}
+
+.recent-question__list {
+    margin: 5px;
+    padding: 3px;
+    border-bottom: var(--border_line);
+}
+
+.recent-question__booktitle {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
 }

@@ -28,20 +28,17 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    recent_booklist = list(db.booklists.find({}))
-    recent_questionlist = list(db.questions.find({}))
-    if recent_booklist == []:
-        if recent_questionlist == []:
+    recent_booklists = list(db.booklists.find({}).sort('_id', -1).limit(3))
+    recent_questionlists = list(db.questions.find({}).sort('_id', -1).limit(5))
+    if recent_booklists == []:
+        if recent_questionlists == []:
             return render_template('index.html')
         else:
-            recent_questionlists = recent_questionlist[:5]
             return render_template('index.html', recent_questionlists=recent_questionlists)
     else:
-        recent_booklists = recent_booklist[:3]
-        if recent_questionlist == []:
+        if recent_questionlists == []:
             return render_template('index.html', recent_booklists=recent_booklists)
         else:
-            recent_questionlists = recent_questionlist[:5]
             return render_template('index.html', recent_questionlists=recent_questionlists, recent_booklists=recent_booklists)
 
 
@@ -108,6 +105,7 @@ def bookboard():
 @app.route('/write_question', methods=['get', 'post'])
 def write_question():
     param_isbn = request.args['book']
+    title = list(db.booklists.find({'isbn': param_isbn}))[0]['title']
     writer = request.form['writer']
     password = request.form['password']
     question_title = request.form['question_title']
@@ -118,6 +116,7 @@ def write_question():
     q = {
         'q_id': q_id,
         'isbn': param_isbn,
+        'title': title,
         'writer': writer,
         'password': password,
         'question_title': question_title,
@@ -205,7 +204,6 @@ def check_password():
         else:
             return redirect(f'/detail?book={param_isbn}&qid={q_id}')
     else:
-        print(q_id)
         book_db = list(db.questions.find({"q_id": q_id}))[0]
         pw_db = book_db['password']
         param_isbn = book_db['isbn']
