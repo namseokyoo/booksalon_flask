@@ -64,7 +64,7 @@
     margin-top: 5px;
     margin-bottom: 15px;
     border-bottom: var(--border_line);
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 .recent-book__info {
@@ -83,6 +83,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .recent-book__author {
@@ -105,6 +106,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 630px) {
@@ -112,11 +114,14 @@
         flex-direction: column;
         width: 100%;
         align-items: flex-start;
+        padding: 0px 0px;
     }
     .recent-book__info {
+        margin: 0px 5px;
         flex-direction: row;
         align-items: center;
         height: 150px;
+        width: 100%;
     }
     .recent-book__author {
         overflow: visible;
@@ -124,10 +129,9 @@
     }
     .recent-book__title {
         overflow: visible;
-        text-overflow: initial;
+        width: auto;
     }
     .recent-book__info__detail {
-        margin-right: 10px;
         align-items: flex-start;
     }
     .recent-book__title {
