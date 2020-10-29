@@ -1,3 +1,7 @@
+.board {
+    width: inherit;
+}
+
 .board__title {
     font-size: 16px;
     font-weight: 700;

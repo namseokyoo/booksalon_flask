@@ -10,42 +10,39 @@
 
 <body>
     {% include 'header.html' %}
-    {% include 'bookinfo.html' %}
+    <div class="content">
+        {% include 'bookinfo.html' %}
 
-    <div class="board">
-        <form action="/write_question?book={{book.isbn}}" method="post">
-            <div class="question-info">
-                <div class="question-info__writer">
-                    <span>
-                        작성자 :
-                    </span>
-                    <input class="question-info__writer-input" name="writer" type="text" required />
+        <div class="board">
+            <form action="/write_question?book={{book.isbn}}" method="post">
+                <div class="question-info">
+                    <div class="question-info__writer">
+                        <span>
+                            작성자 :
+                        </span>
+                        <input class="question-info__writer-input" name="writer" type="text" required />
+                    </div>
+                    <div class="question-info__password">
+                        <span>
+                            비밀번호 :
+                        </span>
+                        <input class="question-info__password-input" name="password" type="text" required />
+                    </div>
                 </div>
-                <div class="question-info__password">
-                    <span>
-                        비밀번호 :
-                    </span>
-                    <input class="question-info__password-input" name="password" type="text" required />
+                <div>
+                    <input class="question__title" type="text" name="question_title" placeholder=" 제목을 입력하세요"
+                        required />
                 </div>
-            </div>
-            <div>
-                <input class="question__title" type="text" name="question_title" placeholder=" 제목을 입력하세요" required />
-            </div>
-            <div>
-                <textarea class="question__text" name="question" placeholder=" 질문 내용을 입력하세요" required></textarea>
-            </div>
-            <div class="submit">
-                <button class="btn" type="submit"><i class="fas fa-paper-plane"></i>보내기</button>
-            </div>
-        </form>
+                <div>
+                    <textarea class="question__text" name="question" placeholder=" 질문 내용을 입력하세요" required></textarea>
+                </div>
+                <div class="submit">
+                    <button class="btn" type="submit"><i class="fas fa-paper-plane"></i>보내기</button>
+                </div>
+            </form>
+        </div>
     </div>
-
     {% include 'footer.html' %}
-    <script>
-        function write_question() {
-            const writer = document.querySelector("question-info__wirter-input")
-        }
-    </script>
     <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
 </body>
 

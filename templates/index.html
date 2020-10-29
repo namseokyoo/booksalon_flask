@@ -16,14 +16,17 @@
     <div class="search-box">
         <img src="static/img/library.jpg" />
         <div class="search-box__search-bar">
-            <i class="fas fa-search fa-sm"></i>
             <form action="/search">
-                <input type="text" name="param" class="search-box__input" placeholder="책 이름을 검색해 보세요" />
+                <div>
+                    <i class="fas fa-search fa-sm"></i>
+                    <input type="text" name="param" class="search-box__input" placeholder="제목, 저자를 검색해 보세요" required />
+                </div>
+                <button type="submit">검색</button>
             </form>
         </div>
     </div>
     <div class="content">
-        <h3 class="recent">사람들이 많이 이야기 하고 있는 책</h3>
+        <h3 class="recent">사람들이 최근 이야기 하고 있는 책</h3>
         <div class="recent-book">
             {% for recent_booklist in recent_booklists %}
             <a href="/bookboard?book={{recent_booklist.isbn}}">

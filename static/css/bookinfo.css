@@ -4,6 +4,7 @@
     margin-bottom: 15px;
     border-bottom: var(--border_line);
     padding: 15px 10px;
+    width: inherit;
 }
 
 .book__cover > img {
