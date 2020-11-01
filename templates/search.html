@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="static/js/function.js"></script>
+    <title>Welcome to Booksalon</title>
+</head>
+
+<body>
+    {% include 'header.html' %}
+    <div class="search-box">
+        <img src="static/img/library.jpg" />
+        <div class="search-box__search-bar">
+            <i class="fas fa-search fa-sm"></i>
+            <form action="/search">
+                <input type="text" name="param" class="search-box__input" placeholder="책 이름을 검색해 보세요" />
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        <h3 class="search-result">'{{param}}'검색결과</h3>
+        <div class="search-list">
+            <ul>
+                {% for booklist in booklists%}
+                <li class="search-list__result">
+                    <div class="result-column">
+                        <img src="{{booklist.imgUrl}}" />
+                    </div>
+                    <div class="result-column">
+                        <a href="/bookboard?book={{booklist.isbn}}">
+                            <span class=" title"> {{booklist.title}}</span>
+                        </a>
+                        <div class="result-desc">
+                            {% for author in booklist.author %}
+                            <span class="author">{{author}}</span>
+                            {% endfor %}
+                            <span class="result-desc__desc divide"> |</span>
+                            <span class="result-desc__desc pub_date">{{booklist.pubdate}}</span>
+                            <span class="result-desc__desc divide"> |</span>
+                            <span class="result-desc__desc publisher">{{booklist.publisher}}</span>
+                            <span class="result-desc__desc divide"> |</span>
+                        </div>
+                        <p class="contents">{{booklist.contents}}</p>
+                    </div>
+
+                </li>
+                {% endfor%}
+            </ul>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+    <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

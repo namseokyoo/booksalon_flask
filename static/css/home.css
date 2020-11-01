@@ -1,0 +1,183 @@
+.search-box {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.search-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    max-height: initial;
+    margin-top: -40%;
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+    opacity: 0.9;
+    position: absolute;
+    z-index: 1;
+}
+
+.search-box__search-bar {
+    display: flex;
+    color: var(--main_gray);
+    background-color: white;
+    width: 40%;
+    height: 30px;
+    min-width: 280px;
+    padding: 3px 0px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.search-box__search-bar form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 5px;
+}
+.search-box__search-bar form button {
+    background-color:;rgba(0, 0, 0, 0.3);
+    border: none;
+    height: 30px;
+    padding: 0px 11px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.search-box__input {
+    border: none;
+}
+
+.recent {
+    font-size: 14px;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.recent-book {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-bottom: var(--border_line);
+    padding: 10px 0px;
+}
+
+.recent-book a {
+    width: 210px;
+}
+
+.recent-book__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 15px;
+    width: 180px;
+    height: 170px;
+    font-size: 12px;
+    position: relative;
+}
+
+.recent-book__info__detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recent-book__author {
+    height: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+}
+
+.recent-book__info img {
+    height: 130px;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.recent-book__title {
+    font-weight: bold;
+    height: 12px;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 630px) {
+    .recent-book__info img {
+        height: 80px;
+    }
+    .recent-book {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        padding: 0px 0px;
+    }
+    .recent-book a {
+        width: 100%;
+    }
+    .recent-book__info {
+        margin: 0px 5px;
+        flex-direction: row;
+        height: 90px;
+        width: 100%;
+    }
+
+    .recent-book__title {
+        width: 70vw;
+    }
+    .recent-book__info__detail {
+        align-items: flex-start;
+        margin-right: 10px;
+    }
+
+    .recent-book__info__detail:last-child {
+        width: 100%;
+    }
+    .recent-book__title {
+        margin-bottom: 15px;
+        text-align: start;
+    }
+}
+
+.recent-question {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.recent-question__list {
+    margin: 5px;
+    padding: 3px;
+    border-bottom: var(--border_line);
+}
+
+.recent-question__booktitle {
+    width: 90vw;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

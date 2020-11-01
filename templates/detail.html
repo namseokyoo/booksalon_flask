@@ -10,86 +10,88 @@
 
 <body>
     {% include 'header.html' %}
-    {% include 'bookinfo.html' %}
+    <div class="content">
+        {% include 'bookinfo.html' %}
 
-    <div class="detail board">
-        <div class="detail__question-info">
-            <div class="question-info__column">
-                <div class="detail__question-title">
-                    {{detail.question_title}}
+        <div class="detail board">
+            <div class="detail__question-info">
+                <div class="question-info__column">
+                    <div class="detail__question-title">
+                        {{detail.question_title}}
+                    </div>
+                </div>
+                <div class="question-info__column">
+                    <div class="detail__question-info__writer">
+                        {{detail.writer}}
+                    </div>
+                    <div class="post_time">
+                        {{detail.post_time}}
+                    </div>
                 </div>
             </div>
-            <div class="question-info__column">
-                <div class="detail__question-info__writer">
-                    {{detail.writer}}
-                </div>
-                <div class="post_time">
-                    {{detail.post_time}}
-                </div>
+            <div>
+                <p class="detail__question__text" style="white-space:pre-line;">
+                    {{detail.question}}
+                </p>
             </div>
-        </div>
-        <div>
-            <p class="detail__question__text" style="white-space:pre-line;">
-                {{detail.question}}
-            </p>
-        </div>
-        <div class="edit">
-            <button class="delete" type="button" onclick="location.href='/checkpw?id={{detail._id}}&type=q'">
-                <i class="fas fa-trash-alt"></i><span>삭제</span></button>
-        </div>
+            <div class="edit">
+                <button class="delete" type="button" onclick="location.href='/checkpw?qid={{detail.q_id}}&type=q'">
+                    <i class="fas fa-trash-alt"></i><span>삭제</span></button>
+            </div>
 
-        <i class="fab fa-replyd fa-2x"></i>
-        <div class="replies">
-            <ul>
-                {%for reply in detail.reply_db %}
-                <li class="reply_data">
-                    <div class="reply__top">
-                        <div class="reply_writer">
-                            {{reply.reply_writer}}
+            <i class="fab fa-replyd fa-2x"></i>
+            <div class="replies">
+                <ul>
+                    {%for reply in detail.reply_db %}
+                    <li class="reply_data">
+                        <div class="reply__top">
+                            <div class="reply_writer">
+                                {{reply.reply_writer}}
+                            </div>
+                            <div class="reply_time">{{reply.reply_time}} |
+                                <a href="/checkpw?qid={{detail.q_id}}&reply_id={{reply.reply_id}}&type=reply"><i
+                                        class="fas fa-trash-alt"></i></a>
+                            </div>
                         </div>
-                        <div class="reply_time">{{reply.reply_time}} |
-                            <a href="/checkpw?id={{detail._id}}&reply_id={{reply.reply_id}}&type=reply"><i
-                                    class="fas fa-trash-alt"></i></a>
+                        <div class="reply__bottom">
+                            <div class="reply_text">
+                                {{reply.reply_text}}
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+
+
+
+
+            <div class="reply_box">
+                <form action="/write_reply?qid={{detail.q_id}}" method="post">
+                    <div class="question-info">
+                        <div class="question-info__writer">
+                            <span>
+                                작성자 :
+                            </span>
+                            <input class="question-info__writer-input" name="reply-writer" type="text" required />
+                        </div>
+                        <div class="question-info__password">
+                            <span>
+                                비밀번호 :
+                            </span>
+                            <input class="question-info__password-input" name="reply-password" type="text" required />
                         </div>
                     </div>
-                    <div class="reply__bottom">
-                        <div class="reply_text">
-                            {{reply.reply_text}}
-                        </div>
+                    <div>
+                        <textarea class="question__text reply_question__text" name="reply-text"
+                            placeholder="새로운 댓글을 입력하세요" required></textarea>
                     </div>
-                </li>
-                {% endfor %}
-            </ul>
-
-        </div>
-
-
-
-
-        <div class="reply_box">
-            <form action="/write_reply?id={{detail._id}}" method="post">
-                <div class="question-info">
-                    <div class="question-info__writer">
-                        <span>
-                            작성자 :
-                        </span>
-                        <input class="question-info__writer-input" name="reply-writer" type="text" required />
+                    <div class="submit">
+                        <button class="btn" type="submit"><i class="fas fa-paper-plane"></i>보내기</button>
                     </div>
-                    <div class="question-info__password">
-                        <span>
-                            비밀번호 :
-                        </span>
-                        <input class="question-info__password-input" name="reply-password" type="text" required />
-                    </div>
-                </div>
-                <div>
-                    <textarea class="question__text reply_question__text" name="reply-text" placeholder="새로운 댓글을 입력하세요"
-                        required></textarea>
-                </div>
-                <div class="submit">
-                    <button class="btn" type="submit"><i class="fas fa-paper-plane"></i>보내기</button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
     {% include 'footer.html' %}

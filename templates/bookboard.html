@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="static/js/function.js"></script>
+    <title>Welcome to Booksalon</title>
+</head>
+
+<body>
+    {% include 'header.html' %}
+    <div class="content">
+        {% include 'bookinfo.html' %}
+
+
+        <div class="board">
+            <div>
+                <span class="board__title">질문리스트</span> <span class="board__desc"> | 책에대해 궁금한 질문들 입니다.</span>
+            </div>
+            <ul class="question__board">
+                {%for question in question_list%}
+                <li class="question__list">
+                    <div class="question__top">
+                        <div class="writer">
+                            {{question.writer}}
+                        </div>
+                        <div class="time">{{question.post_time}}</div>
+                    </div>
+                    <div class="question__bottom">
+
+                        <a href="/detail?book={{book.isbn}}&qid={{question.q_id}}">
+                            <div class="question">{{question.question_title}}</div>
+                        </a>
+
+                        <div class="reply">
+                            {{question.reply}}
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="write_question">
+            <button class="write" type="button" onclick="location.href='/write?book={{book.isbn}}'"><i
+                    class="fas fa-question"></i><span>질문쓰기</span></button>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+    <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

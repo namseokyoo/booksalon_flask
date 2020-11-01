@@ -13,41 +13,60 @@
 
 <body>
     {% include 'header.html' %}
-    {% include 'bookinfo.html' %}
-
-    <div class="board">
-        <div>
-            <span class="board__title">질문리스트</span> <span class="board__desc"> | 책에대해 궁금한 질문들 입니다.</span>
+    <div class="search-box">
+        <img src="static/img/library.jpg" />
+        <div class="search-box__search-bar">
+            <form action="/search">
+                <div>
+                    <i class="fas fa-search fa-sm"></i>
+                    <input type="text" name="param" class="search-box__input" placeholder="제목, 저자를 검색해 보세요" required />
+                </div>
+                <button type="submit">검색</button>
+            </form>
         </div>
-        <ul>
-            {%for question in question_list%}
-            <li class="question__list">
-                <div class="question__top">
-                    <div class="writer">
-                        {{question.writer}}
-                    </div>
-                    <div class="time">{{question.post_time}}</div>
-                </div>
-                <div class="question__bottom">
-
-                    <a href="/detail?id={{question._id}}">
-                        <div class="question">{{question.question_title}}</div>
-                    </a>
-
-                    <div class="reply">
-                        {{question.reply}}
-                    </div>
-                </div>
-            </li>
-            {% endfor %}
-        </ul>
     </div>
-    <div class="write_question">
-        <button class="write" type="button" onclick="location.href='/write'"><i
-                class="fas fa-question"></i><span>질문쓰기</span></button>
+    <div class="content">
+        <h3 class="recent">새로운 이야기가 있는 책</h3>
+        <div class="recent-book">
+            {% for recent_booklist in recent_booklists %}
+            <a href="/bookboard?book={{recent_booklist.isbn}}">
+                <div class="recent-book__info">
+                    <div class="recent-book__info__detail"><img class="recent-book__image"
+                            src="{{recent_booklist.imgUrl}}"></div>
+                    <div class="recent-book__info__detail">
+                        <div class="recent-book__title">{{recent_booklist.title}}</div>
+                        <div class="recent-book__author">{% for author in recent_booklist.author %}{{author}}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        <h3 class="recent">사람들이 최근 올린 질문</h3>
+        <div class="recent-question">
+            <ul>
+                {% if recent_questionlists is defined %}
+                {% for recent_questionlist in recent_questionlists %}
+                <li class="recent-question__list">
+                    <div class="recent-question__booktitle">
+                        &#60;{{recent_questionlist.title}}&#62;
+                    </div>
+                    <a href="/detail?book={{recent_questionlist.isbn}}&qid={{recent_questionlist.q_id}}">
+                        <div class="recent-question__title">
+                            {{recent_questionlist.question_title}}
+                        </div>
+                    </a>
+                </li>
+                {% endfor %}
+                {% else %}
+                {% endif %}
+            </ul>
+        </div>
     </div>
     {% include 'footer.html' %}
     <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

@@ -3,9 +3,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: var(--blue);
-    color: white;
     padding: 0px 15px;
     height: 40px;
+    width: 100%;
     border-radius: 3px;
 }
 
@@ -24,6 +24,7 @@ nav {
 .logo__title h1 {
     font-size: 18px;
     font-weight: bolder;
+    color: white;
     /* margin: 0px 30px; */
 }
 
