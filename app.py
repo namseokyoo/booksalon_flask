@@ -9,6 +9,7 @@ from pymongo import MongoClient
 from bson import ObjectId
 from dotenv import load_dotenv
 from book_api import getbook
+from addbook import addbook
 
 
 load_dotenv()
@@ -73,24 +74,7 @@ def bookboard():
     param_isbn = request.args['book']
     book_db = list(db.booklists.find({"isbn": param_isbn}))
     if book_db == []:
-        addbook = getbook(param_isbn.split(" ")[0])[0]
-        title = addbook['title']
-        author = addbook['authors']
-        pubdate = addbook['datetime'][:10]
-        isbn = addbook['isbn']
-        publisher = addbook['publisher']
-        imgUrl = addbook['thumbnail']
-        contents = addbook['contents']
-        book = {
-            "title": title,
-            "author": author,
-            "pubdate": pubdate,
-            "isbn": isbn,
-            "publisher": publisher,
-            "imgUrl": imgUrl,
-            "contents": contents
-        }
-        db.booklists.insert_one(book)
+        book = addbook(param_isbn)
         return render_template('bookboard.html', book=book)
     else:
         book = book_db[0]
@@ -98,13 +82,17 @@ def bookboard():
         if question_list == []:
             return render_template('bookboard.html', book=book)
         else:
-            id = question_list[0]['_id']
+            # id = question_list[0]['_id']
             return render_template('bookboard.html', book=book, question_list=question_list)
 
 
 @app.route('/write_question', methods=['get', 'post'])
 def write_question():
     param_isbn = request.args['book']
+    book_db = list(db.booklists.find({"isbn": param_isbn}))
+    if book_db == []:
+        book = addbook(param_isbn)
+        db.booklists.insert_one(book)
     title = list(db.booklists.find({'isbn': param_isbn}))[0]['title']
     writer = request.form['writer']
     password = request.form['password']
@@ -159,7 +147,7 @@ def write_reply():
 @app.route('/write')
 def wirte():
     param_isbn = request.args['book']
-    book = list(db.booklists.find({"isbn": param_isbn}))[0]
+    book = addbook(param_isbn)
     return render_template('write.html', book=book)
 
 

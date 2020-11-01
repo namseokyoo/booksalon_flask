@@ -145,7 +145,7 @@
     }
 
     .recent-book__title {
-        width: 60vw;
+        width: 70vw;
     }
     .recent-book__info__detail {
         align-items: flex-start;
@@ -173,7 +173,11 @@
 }
 
 .recent-question__booktitle {
+    width: 90vw;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
