@@ -60,6 +60,7 @@
 
 .search-box__input {
     border: none;
+    width: 80%;
 }
 
 .recent {
