@@ -3,7 +3,8 @@
         <img src="{{book.imgUrl}}">
     </div>
     <div class="book__info">
-        <span class="title"> {{book.title}}</span>
+
+        <span class="title"><a href="/bookboard?book={{book.isbn}}">{{book.title}}</a> </span>
         <span class="author">저자 |
             {% for author in book.author %}
             {{author}}
