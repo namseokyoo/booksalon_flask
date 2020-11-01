@@ -48,7 +48,8 @@
     margin-left: 5px;
 }
 .search-box__search-bar form button {
-    background-color:;rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
+    width: fit-content;
     border: none;
     height: 30px;
     padding: 0px 11px;
@@ -117,6 +118,7 @@
 .recent-book__title {
     font-weight: bold;
     height: 12px;
+    font-size: 12px;
     width: 180px;
     white-space: nowrap;
     overflow: hidden;
@@ -175,10 +177,15 @@
 
 .recent-question__booktitle {
     width: 90vw;
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 5px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.recent-question__title {
+    font-size: 13px;
+    line-height: 120%;
 }

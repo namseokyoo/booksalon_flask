@@ -13,15 +13,20 @@ from addbook import addbook
 
 
 load_dotenv()
+FLASKHOST = os.getenv('FLASKHOST')
 HOST = os.getenv('HOST')
+PORT = os.getenv('PORT')
+MC = os.getenv('MC')
 USERNAME = os.getenv('USERNAME')
 PASSWORD = os.getenv('PASSWORD')
-# client = MongoClient('localhost', 27017)
-client = MongoClient(HOST,
-                     27017,
-                     username=USERNAME,
-                     password=PASSWORD,
-                     authMechanism='SCRAM-SHA-1')
+if HOST == 'localhost':
+    client = MongoClient(HOST, 27017)
+else:
+    client = MongoClient(HOST,
+                         27017,
+                         username=USERNAME,
+                         password=PASSWORD,
+                         authMechanism='SCRAM-SHA-1')
 db = client.booksalon
 
 app = Flask(__name__)
@@ -82,7 +87,6 @@ def bookboard():
         if question_list == []:
             return render_template('bookboard.html', book=book)
         else:
-            # id = question_list[0]['_id']
             return render_template('bookboard.html', book=book, question_list=question_list)
 
 
@@ -201,5 +205,6 @@ def check_password():
 
 
 if __name__ == "__main__":
-    # app.run(host='localhost', port=5000, debug='True')
-    app.run(host='0.0.0.0', port=80, debug='True')
+
+    app.run(host=FLASKHOST, port=PORT, debug='True')
+    # app.run(host='0.0.0.0', port=80, debug='True')
