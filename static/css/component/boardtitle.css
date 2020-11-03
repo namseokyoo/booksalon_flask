@@ -1,0 +1,12 @@
+.board-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 5px;
+    border-bottom: var(--border_line);
+}
+
+.content > a {
+    width: 100%;
+}

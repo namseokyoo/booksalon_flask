@@ -16,15 +16,6 @@ load_dotenv()
 FLASKHOST = os.getenv('FLASKHOST')
 PORT = os.getenv('PORT')
 
-# if HOST == 'localhost':
-#     client = MongoClient(HOST, 27017)
-# else:
-#     # client = MongoClient(HOST,
-#     #                      27017,
-#     #                      authSource="admin",
-#     #                      username=USERNAME,
-#     #                      password=PASSWORD,
-#     #                      authMechanism='SCRAM-SHA-1')
 uri = os.getenv('URI')
 client = MongoClient(uri)
 db = client.booksalon
@@ -204,7 +195,18 @@ def check_password():
             return redirect(f'/detail?qid={q_id}')
 
 
+@app.route('/recentbooks')
+def recentbooks():
+    recent_booklists = list(db.booklists.find({}).sort('_id', -1))
+    return render_template('recentbooks.html', recent_booklists=recent_booklists)
+
+
+@app.route('/recentquestions')
+def recentquestions():
+    recent_questionlists = list(db.questions.find({}).sort('_id', -1))
+    return render_template('recentquestions.html', recent_questionlists=recent_questionlists)
+
+
 if __name__ == "__main__":
 
     app.run(host=FLASKHOST, port=PORT, debug='True')
-    # app.run(host='0.0.0.0', port=80, debug='True')

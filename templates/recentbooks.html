@@ -15,15 +15,17 @@
     {% include 'header.html' %}
     {%include 'searchbox.html'%}
     <div class="content">
-        <div class="board-name">
-            <div>
-                <h3 class="search-result">'{{param}}'검색결과</h3>
+        <a href="/recentbooks">
+            <div class="board-name">
+                <div>
+                    <h3 class="recent-questions">이야기 나누고 있는 책</h3>
+                </div>
+                <i class="fas fa-angle-right"></i>
             </div>
-            <i class="fas fa-angle-right"></i>
-        </div>
-        <div class="search-list">
+        </a>
+        <div class="recent-books__list">
             <ul>
-                {% for booklist in booklists%}
+                {% for booklist in recent_booklists%}
                 <li class="search-list__result">
                     <div class="result-column">
                         <img src="{{booklist.imgUrl}}" />

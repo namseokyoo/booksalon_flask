@@ -11,6 +11,10 @@
 @import "footer.css";
 @import "bookboard.css";
 @import "searchresult.css";
+@import "recentbooks.css";
+@import "recentquestions.css";
+
+@import "component/boardtitle.css";
 
 * {
     font-family: "Noto Sans KR", sans-serif;
