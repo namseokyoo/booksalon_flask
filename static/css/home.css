@@ -49,7 +49,7 @@
 }
 .search-box__search-bar form button {
     background-color: rgba(0, 0, 0, 0.1);
-    width: fit-content;
+    width: 55px;
     border: none;
     height: 30px;
     padding: 0px 11px;
