@@ -14,19 +14,19 @@ from addbook import addbook
 
 load_dotenv()
 FLASKHOST = os.getenv('FLASKHOST')
-HOST = os.getenv('HOST')
 PORT = os.getenv('PORT')
-MC = os.getenv('MC')
-USERNAME = os.getenv('USERNAME')
-PASSWORD = os.getenv('PASSWORD')
-if HOST == 'localhost':
-    client = MongoClient(HOST, 27017)
-else:
-    client = MongoClient(HOST,
-                         27017,
-                         username=USERNAME,
-                         password=PASSWORD,
-                         authMechanism='SCRAM-SHA-1')
+
+# if HOST == 'localhost':
+#     client = MongoClient(HOST, 27017)
+# else:
+#     # client = MongoClient(HOST,
+#     #                      27017,
+#     #                      authSource="admin",
+#     #                      username=USERNAME,
+#     #                      password=PASSWORD,
+#     #                      authMechanism='SCRAM-SHA-1')
+uri = os.getenv('URI')
+client = MongoClient(uri)
 db = client.booksalon
 
 app = Flask(__name__)
