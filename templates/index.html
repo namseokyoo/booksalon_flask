@@ -15,7 +15,10 @@
     {% include 'header.html' %}
     {%include 'searchbox.html'%}
     <div class="content">
-        <h3 class="recent"><a href="/recentbooks">새로운 이야기가 있는 책</a></h3>
+        <a href="/recentbooks">
+            <span class="recent">최근 이야기 나누고 있는 책</span>
+            <span class="recent__more"> 더보기</span>
+        </a>
         <div class="recent-book">
             {% for recent_booklist in recent_booklists %}
             <a href="/bookboard?book={{recent_booklist.isbn}}">
@@ -32,7 +35,12 @@
             </a>
             {% endfor %}
         </div>
-        <h3 class="recent"><a href="/recentquestions">사람들이 최근 올린 글</a></h3>
+        <a href="/recentquestions">
+            <span class="recent">최근 책 이야기</span>
+            <span class="recent__more"> 더보기</span>
+
+
+        </a>
         <div class="recent-question">
             <ul>
                 {% if recent_questionlists is defined %}
