@@ -99,6 +99,11 @@ def home():
     #         return render_template('index.html', recent_questionlists=recent_questionlists, recent_booklists=recent_booklists)
 
 
+@app.route('/register')
+def register():
+    return render_template('user/register.html')
+
+
 @app.route('/search')
 def search():
     param = request.args['param']
@@ -252,7 +257,7 @@ def check_password():
             db.questions.remove({"q_id": q_id})
             return redirect(f'/bookboard?book={param_isbn}')
         else:
-            return redirect(f'/detail?qid={q_id}')
+            return redirect(f'/detail?book={param_isbn}&qid={q_id}')
 
 
 @app.route('/recentbooks')

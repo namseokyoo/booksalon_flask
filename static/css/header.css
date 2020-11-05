@@ -19,7 +19,7 @@ nav {
 
 .login_link {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 .logo__title h1 {
     font-size: 18px;
@@ -31,4 +31,9 @@ nav {
 .logo__title a {
     text-decoration: none;
     color: inherit;
+}
+
+.register__link {
+    text-decoration: none;
+    color: white;
 }
