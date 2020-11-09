@@ -14,7 +14,7 @@
 <body>
     {% include 'header.html' %}
     <div class="content">
-        <form class="register-form" action="/register" method="post">
+        <form class="register-form" action="/login" method="post">
             <div class="register-form_section">
                 <label class="userid">아이디 :</label>
                 <input type="text" name="userid" required>
@@ -23,19 +23,7 @@
                 <label class="userid">패스워드 : </label>
                 <input type="password" name="password" required>
             </div>
-            <div class="register-form_section">
-                <label class="userid">패스워드 확인: </label>
-                <input type="password" name="repassword" required>
-            </div>
-            <div class="register-form_section">
-                <label class="userid">닉네임 : </label>
-                <input type="text" name="username" required>
-            </div>
-            <div class="register-form_section">
-                <label class="userid">이메일 : </label>
-                <input type="email" name="email" required>
-            </div>
-            <button type="submit">회원가입</button>
+            <button type="submit">로그인</button>
         </form>
 
 

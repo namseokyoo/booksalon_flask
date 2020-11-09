@@ -7,5 +7,23 @@
 .register-form {
     display: flex;
     flex-direction: column;
-    align-content: flex-startgi;
+    align-items: center;
+}
+
+.register-form_section {
+    display: flex;
+}
+
+.register-form_section label {
+    margin-right: 10px;
+    width: 120px;
+    text-align: right;
+}
+
+.register-form_section input {
+    width: 120px;
+}
+
+.register-form button {
+    width: 50%;
 }

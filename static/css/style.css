@@ -16,6 +16,7 @@
 @import "register.css";
 
 @import "component/boardtitle.css";
+@import "component/user.css";
 
 * {
     font-family: "Noto Sans KR", sans-serif;
