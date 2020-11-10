@@ -1,7 +1,7 @@
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import "home.css";
-@import "bookboard";
+@import "bookboard.css";
 @import "write.css";
 @import "detail.css";
 @import "variables.css";

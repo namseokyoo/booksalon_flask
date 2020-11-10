@@ -33,7 +33,20 @@ nav {
     color: inherit;
 }
 
+.login_success,
 .register__link {
     text-decoration: none;
     color: white;
+    font-size: 12px;
+    margin: 0px 3px;
+}
+
+.login_success {
+    display: none;
+    /* display: inline-block; */
+}
+
+.register__link {
+    display: none;
+    /* display: none; */
 }

@@ -81,11 +81,15 @@ app.config['SECRET_KEY'] = '1111111111111111111111'
 
 @app.route('/')
 def home():
+    if 'userid' in session:
+        login_id = session.get('userid', None)
+    else:
+        login_id = ''
     recent_booklists = list(db.booklists.find({}).sort('_id', -1).limit(3))
     recent_questionlists = list(db.questions.find({}).sort('_id', -1).limit(5))
 
     res = make_response(render_template(
-        'index.html', recent_questionlists=recent_questionlists, recent_booklists=recent_booklists))
+        'index.html', recent_questionlists=recent_questionlists, recent_booklists=recent_booklists, login_id=login_id))
     # res.set_cookie(app.session_cookie_name, session.sid)
     return res
     # if recent_booklists == []:
@@ -100,19 +104,38 @@ def home():
     #         return render_template('index.html', recent_questionlists=recent_questionlists, recent_booklists=recent_booklists)
 
 
+@app.route('/getuserid')
+def getuserid():
+    if 'userid' in session:
+        login_id = session.get('userid', None)
+    else:
+        login_id = ''
+    return jsonify({'result': 'success', 'login_id': login_id})
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'GET':
         return render_template('user/login.html')
     else:
         userid = request.form['userid']
-        password = request.form['password']
-        password_db = list(db.user.find({'userid': userid}))[0]['password']
-        if password_db != password:
-            return render_template('user/login_fail.html')
+        userid_db = list(db.user.find({'userid': userid}))
+        if userid_db == []:
+            return render_template('user/login_fail.html', msg='ID를 확인해 주세요')
         else:
-            session['userid'] = userid
-            return redirect('/')
+            password = request.form['password']
+            password_db = list(db.user.find({'userid': userid}))[0]['password']
+            if password_db != password:
+                return render_template('user/login_fail.html', msg='비밀번호를 확인해 주세요')
+            else:
+                session['userid'] = userid
+                return redirect('/')
+
+
+@app.route('/logout')
+def logout():
+    session.pop('userid', None)
+    return redirect('/')
 
 
 @app.route('/register', methods=['GET', 'POST'])
