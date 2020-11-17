@@ -13,22 +13,27 @@
 <body>
     {% include 'header.html' %}
     <div class="content">
-        <form class="register-form" action="/login" method="post">
+        <form class="register-form" method="post">
             <div class="register-form_section">
-                <label class="userid">아이디 :</label>
-                <input type="text" name="userid" required>
+                <label class="userid">이메일 :</label>
+                <input id="userId" type="text" name="userId">
             </div>
             <div class="register-form_section">
-                <label class="userid">패스워드 : </label>
-                <input type="password" name="password" required>
+                <label class="userid">비밀번호 : </label>
+                <input id="userPassword" type="password" name="password">
             </div>
-            <button type="submit">로그인</button>
+            <button onclick="login()" type="submit">로그인</button>
         </form>
 
 
     </div>
     {% include 'footer.html' %}
     <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="text/javascript" src="/static/js/user/register.js"></script>
+    <script type="text/javascript" src="/static/js/user/login.js"></script>
+    <script type="text/javascript" src="/static/js/user/login-header.js"></script>
+
 
 </body>
 

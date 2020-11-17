@@ -28,61 +28,11 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = '1111111111111111111111'
 
-# class MongoSession(CallbackDict, SessionMixin):
-#     def __init__(self, initial=None, sid=None):
-#         CallbackDict.__init__(self, initial)
-#         self.sid = sid
-#         self.modified = False
-
-
-# class MongoSessinoInterface(SessionInterface):
-#     def __init__(self, host='localhost', port=27017,
-#                  db='', collection='sessions'):
-#         # client = MongoClient(host, port)
-#         self.store = client[db][collection]
-
-#     def open_session(self, app, request):
-#         sid = request.cookies.get(app.session_cookie_name)
-#         if sid:
-#             stored_session = self.store.find_one({'sid': sid})
-#             if stored_session:
-#                 if stored_session.get('expiration') > datetime.utcnow():
-#                     return MongoSession(initial=stored_session['data'],
-#                                         sid=stored_session['sid'])
-#         sid = str(uuid4())
-#         return MongoSession(sid=sid)
-
-#     def save_session(self, app, session, response):
-#         domain = self.get_cookie_domain(app)
-#         if session is None:
-#             response.delete_cookie(app.session_cookie_name, domain=domain)
-#             return
-#         if self.get_expiration_time(app, session):
-#             expiration = self.get_expiration_time(app, session)
-#         else:
-#             expiration = datetime.utcnow() + timedelta(hours=1)
-
-#         self.store.update({'sid': session.sid}, {
-#             'sid': session.sid,
-#             'data': session,
-#             'expiration': expiration
-#         }, True)
-#         response.set_cookie(app.session_cookie_name,
-#                             session.sid,
-#                             expires=self.get_expiration_time(app, session),
-#                             httponly=True, domain=domain)
-
-
-# app.session_interface = MongoSessinoInterface(db='session')
-# app.config.update(
-#     SESSION_COOKIE_NAME='flask_session'
-# )
-
 
 @app.route('/')
 def home():
-    if 'userid' in session:
-        login_id = session.get('userid', None)
+    if 'userId' in session:
+        login_id = session.get('userId', None)
     else:
         login_id = ''
     recent_booklists = list(db.booklists.find({}).sort('_id', -1).limit(3))
@@ -90,27 +40,17 @@ def home():
 
     res = make_response(render_template(
         'index.html', recent_questionlists=recent_questionlists, recent_booklists=recent_booklists, login_id=login_id))
-    # res.set_cookie(app.session_cookie_name, session.sid)
     return res
-    # if recent_booklists == []:
-    #     if recent_questionlists == []:
-    #         return render_template('index.html')
-    #     else:
-    #         return render_template('index.html', recent_questionlists=recent_questionlists)
-    # else:
-    #     if recent_questionlists == []:
-    #         return render_template('index.html', recent_booklists=recent_booklists)
-    #     else:
-    #         return render_template('index.html', recent_questionlists=recent_questionlists, recent_booklists=recent_booklists)
 
 
-@app.route('/getuserid')
-def getuserid():
-    if 'userid' in session:
-        login_id = session.get('userid', None)
+@app.route('/getusername')
+def getusername():
+    if 'userId' in session:
+        userId = session.get('userId', None)
+        userName = list(db.user.find({'userId': userId}))[0]['userName']
     else:
-        login_id = ''
-    return jsonify({'result': 'success', 'login_id': login_id})
+        userName = ''
+    return jsonify({'result': 'success', 'userName': userName})
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -118,24 +58,44 @@ def login():
     if request.method == 'GET':
         return render_template('user/login.html')
     else:
-        userid = request.form['userid']
-        userid_db = list(db.user.find({'userid': userid}))
-        if userid_db == []:
-            return render_template('user/login_fail.html', msg='ID를 확인해 주세요')
+        userId = request.form['userId']
+        password = request.form['password']
+        userId_db = list(db.user.find({'userId': userId}))
+        if userId_db == []:
+            return jsonify({'result': 'success', 'checkResult': 'unusable'})
         else:
-            password = request.form['password']
-            password_db = list(db.user.find({'userid': userid}))[0]['password']
+            password_db = list(db.user.find({'userId': userId}))[0]['password']
             if password_db != password:
-                return render_template('user/login_fail.html', msg='비밀번호를 확인해 주세요')
+                return jsonify({'result': 'success', 'checkResult': 'unusable'})
             else:
-                session['userid'] = userid
+                session['userId'] = userId
                 return redirect('/')
 
 
 @app.route('/logout')
 def logout():
-    session.pop('userid', None)
+    session.pop('userId', None)
     return redirect('/')
+
+
+@app.route('/checkid', methods=['POST'])
+def checkId():
+    inputId = request.form['inputId']
+    id_db = list(db.user.find({'userId': inputId}))
+    if id_db == []:
+        return jsonify({'result': 'success', 'checkResult': 'usable'})
+    else:
+        return jsonify({'result': 'success', 'checkResult': 'unusable'})
+
+
+@app.route('/checkusername', methods=['POST'])
+def checkUserName():
+    inputUserName = request.form['inputUserName']
+    name_db = list(db.user.find({'userName': inputUserName}))
+    if name_db == []:
+        return jsonify({'result': 'success', 'checkResult': 'usable'})
+    else:
+        return jsonify({'result': 'success', 'checkResult': 'unusable'})
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -143,23 +103,17 @@ def register():
     if request.method == 'GET':
         return render_template('user/register.html')
     else:
-        userid = request.form['userid']
+        userId = request.form['userId']
         password = request.form['password']
         re_password = request.form['repassword']
-        username = request.form['username']
-        email = request.form['email']
-
-        if password != re_password:
-            return render_template('user/password_fail.html')
-        else:
-            user_db = {
-                'userid': userid,
-                'password': password,
-                'username': username,
-                'email': email,
-            }
-            db.user.insert_one(user_db)
-            return render_template('user/register_success.html')
+        userName = request.form['userName']
+        user_db = {
+            'userId': userId,
+            'password': password,
+            'userName': userName,
+        }
+        db.user.insert_one(user_db)
+        return redirect('/login')
 
 
 @app.route('/search')
