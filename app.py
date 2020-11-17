@@ -20,13 +20,14 @@ load_dotenv()
 FLASKHOST = os.getenv('FLASKHOST')
 PORT = os.getenv('PORT')
 uri = os.getenv('URI')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 client = MongoClient(uri)
 db = client.booksalon
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = '1111111111111111111111'
+app.config['SECRET_KEY'] = SECRET_KEY
 
 
 @app.route('/')
