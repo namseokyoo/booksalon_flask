@@ -37,7 +37,6 @@ class MongoSession(CallbackDict, SessionMixin):
 class MongoSessinoInterface(SessionInterface):
     def __init__(self, host='localhost', port=27017,
                  db='', collection='sessions'):
-        # client = MongoClient(host, port)
         self.store = client[db][collection]
 
     def open_session(self, app, request):
@@ -87,16 +86,6 @@ def home():
         'index.html', recent_questionlists=recent_questionlists, recent_booklists=recent_booklists))
     res.set_cookie(app.session_cookie_name, session.sid)
     return res
-    # if recent_booklists == []:
-    #     if recent_questionlists == []:
-    #         return render_template('index.html')
-    #     else:
-    #         return render_template('index.html', recent_questionlists=recent_questionlists)
-    # else:
-    #     if recent_questionlists == []:
-    #         return render_template('index.html', recent_booklists=recent_booklists)
-    #     else:
-    #         return render_template('index.html', recent_questionlists=recent_questionlists, recent_booklists=recent_booklists)
 
 
 @app.route('/register')
@@ -255,6 +244,8 @@ def check_password():
         param_isbn = book_db['isbn']
         if pw_input == pw_db:
             db.questions.remove({"q_id": q_id})
+            if (list(db.questions.find({"isbn": param_isbn})) == []):
+                db.booklists.remove({"isbn": param_isbn})
             return redirect(f'/bookboard?book={param_isbn}')
         else:
             return redirect(f'/detail?book={param_isbn}&qid={q_id}')
