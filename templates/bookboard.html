@@ -21,6 +21,11 @@
                 <span class="board__title">질문리스트</span> <span class="board__desc"> | 책에대해 궁금한 질문들 입니다.</span>
             </div>
             <ul class="question__board">
+                {% if question_list|length == 0 %}
+                <li class="question__list">
+                    <div class="question">아직 질문이 없네요ㅜㅜ 이 책의 첫번째 질문을 해보세요!</div>
+                </li>
+                {% endif%}
                 {%for question in question_list%}
                 <li class="question__list">
                     <div class="question__top">
