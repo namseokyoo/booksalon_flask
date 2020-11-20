@@ -60,17 +60,17 @@ def login():
         return render_template('user/login.html')
     else:
         userId = request.form['userId']
-        password = request.form['password']
-        userId_db = list(db.user.find({'userId': userId}))
-        if userId_db == []:
-            return jsonify({'result': 'success', 'checkResult': 'unusable'})
-        else:
-            password_db = list(db.user.find({'userId': userId}))[0]['password']
-            if password_db != password:
-                return jsonify({'result': 'success', 'checkResult': 'unusable'})
-            else:
-                session['userId'] = userId
-                return redirect('/')
+        # password = request.form['password']
+        # userId_db = list(db.user.find({'userId': userId}))
+        # if userId_db == []:
+        #     return jsonify({'result': 'success', 'checkResult': 'unusable'})
+        # else:
+        #     password_db = list(db.user.find({'userId': userId}))[0]['password']
+        #     if password_db != password:
+        #         return jsonify({'result': 'success', 'checkResult': 'unusable'})
+        #     else:
+        session['userId'] = userId
+        return redirect('/')
 
 
 @app.route('/logout')
@@ -87,6 +87,17 @@ def checkId():
         return jsonify({'result': 'success', 'checkResult': 'usable'})
     else:
         return jsonify({'result': 'success', 'checkResult': 'unusable'})
+
+
+@app.route('/checkpassword', methods=['POST'])
+def checkpassword():
+    inputId = request.form['inputId']
+    inputpassword = request.form['inputpassword']
+    password_db = list(db.user.find({'userId': inputId}))[0]['password']
+    if password_db == inputpassword:
+        return jsonify({'result': 'success', 'checkResult': 'success'})
+    else:
+        return jsonify({'result': 'success', 'checkResult': 'fail'})
 
 
 @app.route('/checkusername', methods=['POST'])
