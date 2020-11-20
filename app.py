@@ -166,14 +166,15 @@ def bookboard():
 
 @app.route('/write_question', methods=['get', 'post'])
 def write_question():
+    userId = session.get('userId', None)
+    writer = list(db.user.find({'userId': userId}))[0]['userName']
     param_isbn = request.args['book']
     book_db = list(db.booklists.find({"isbn": param_isbn}))
     if book_db == []:
         book = addbook(param_isbn)
         db.booklists.insert_one(book)
     title = list(db.booklists.find({'isbn': param_isbn}))[0]['title']
-    writer = request.form['writer']
-    password = request.form['password']
+    password = list(db.user.find({'userId': userId}))[0]['password']
     question_title = request.form['question_title']
     question = request.form['question']
     t = datetime.now() + timedelta(hours=9)
@@ -197,10 +198,11 @@ def write_question():
 
 @app.route('/write_reply', methods=['get', 'post'])
 def write_reply():
+    userId = session.get('userId', None)
+    reply_writer = list(db.user.find({'userId': userId}))[0]['userName']
     q_id = request.args['qid']
     reply_id = shortuuid.uuid()
-    reply_writer = request.form['reply-writer']
-    reply_password = request.form['reply-password']
+    reply_password = list(db.user.find({'userId': userId}))[0]['password']
     reply_text = request.form['reply-text']
     reply_t = datetime.now() + timedelta(hours=9)
     reply_time = reply_t.strftime('%Y/%m/%d %H:%M:%S')
@@ -252,15 +254,16 @@ def checkpw():
 
 @app.route('/check_password', methods=['get', 'post'])
 def check_password():
+    userId = session.get('userId', None)
     q_id = request.args['qid']
-    pw_input = request.form["password"]
+    password = list(db.user.find({'userId': userId}))[0]['password']
     type = request.args['type']
     param_isbn = list(db.questions.find({"q_id": q_id}))[0]['isbn']
     if type == "reply":
         reply_id = request.args['reply_id']
         pw_reply_db = list(db.questions.find(
             {"reply_db": {"$elemMatch": {"reply_id": reply_id}}}, {"reply_db": {"$elemMatch": {"reply_id": reply_id}}}))[0]['reply_db'][0]['reply_password']
-        if pw_input == pw_reply_db:
+        if password == pw_reply_db:
             db.questions.update(
                 {"q_id": q_id}, {"$pull": {"reply_db": {"reply_id": reply_id}}}, True, {"multi": True})
             db.questions.update({"q_id": q_id}, {"$inc": {'reply': -1}})
@@ -271,8 +274,10 @@ def check_password():
         book_db = list(db.questions.find({"q_id": q_id}))[0]
         pw_db = book_db['password']
         param_isbn = book_db['isbn']
-        if pw_input == pw_db:
+        if password == pw_db:
             db.questions.remove({"q_id": q_id})
+            if (list(db.questions.find({"isbn": param_isbn})) == []):
+                db.booklists.remove({"isbn": param_isbn})
             return redirect(f'/bookboard?book={param_isbn}')
         else:
             return redirect(f'/detail?book={param_isbn}&qid={q_id}')

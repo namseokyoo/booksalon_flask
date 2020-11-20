@@ -13,7 +13,7 @@
     <div class="content">
         {% include 'bookinfo.html' %}
 
-        <div class="detail board">
+        <div class="detail_board">
             <div class="detail__question-info">
                 <div class="question-info__column">
                     <div class="detail__question-title">
@@ -35,7 +35,8 @@
                 </p>
             </div>
             <div class="edit">
-                <button class="delete" type="button" onclick="location.href='/checkpw?qid={{detail.q_id}}&type=q'">
+                <button class="delete" type="button"
+                    onclick="location.href='/check_password?qid={{detail.q_id}}&type=q'">
                     <i class="fas fa-trash-alt"></i><span>삭제</span></button>
             </div>
 
@@ -49,7 +50,8 @@
                                 {{reply.reply_writer}}
                             </div>
                             <div class="reply_time">{{reply.reply_time}} |
-                                <a href="/checkpw?qid={{detail.q_id}}&reply_id={{reply.reply_id}}&type=reply"><i
+                                <a class="delete_reply"
+                                    href="/check_password?qid={{detail.q_id}}&reply_id={{reply.reply_id}}&type=reply"><i
                                         class="fas fa-trash-alt"></i></a>
                             </div>
                         </div>
@@ -61,15 +63,11 @@
                     </li>
                     {% endfor %}
                 </ul>
-
             </div>
-
-
-
 
             <div class="reply_box">
                 <form action="/write_reply?qid={{detail.q_id}}" method="post">
-                    <div class="question-info">
+                    <!-- <div class="question-info">
                         <div class="question-info__writer">
                             <span>
                                 작성자 :
@@ -82,10 +80,10 @@
                             </span>
                             <input class="question-info__password-input" name="reply-password" type="text" required />
                         </div>
-                    </div>
+                    </div> -->
                     <div>
-                        <textarea class="question__text reply_question__text" name="reply-text"
-                            placeholder="새로운 댓글을 입력하세요" required></textarea>
+                        <textarea class="question__text reply_question__text" name="reply-text" placeholder=""
+                            required></textarea>
                     </div>
                     <div class="submit">
                         <button class="btn" type="submit"><i class="fas fa-paper-plane"></i>보내기</button>
@@ -97,6 +95,7 @@
     {% include 'footer.html' %}
 
     <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/static/js/detail.js"></script>
 </body>
 
 </html>
