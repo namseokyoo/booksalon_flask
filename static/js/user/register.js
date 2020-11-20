@@ -62,7 +62,7 @@ function checkPassword(id, password1, password2) {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: '비밀번호는 영문 대소문자와 숫자 4~12자리로 입력해야합니다.',
+            text: '비밀번호는 영문 대소문자 및 숫자 4~12자리로 입력해야합니다.',
             })
         return false;
     }

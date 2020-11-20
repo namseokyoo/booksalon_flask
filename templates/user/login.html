@@ -14,15 +14,15 @@
     {% include 'header.html' %}
     <div class="content">
         <form class="register-form" method="post">
+            <label class="userid">이메일</label>
             <div class="register-form_section">
-                <label class="userid">이메일 :</label>
-                <input id="userId" type="text" name="userId">
+                <input id="userId" type="text" placeholder="이메일" name="userId">
             </div>
+            <label class="userid">비밀번호 </label>
             <div class="register-form_section">
-                <label class="userid">비밀번호 : </label>
-                <input id="userPassword" type="password" name="password">
+                <input id="userPassword" type="password" placeholder="비밀번호" name="password">
             </div>
-            <button type="submit" onclick="login()">로그인</button>
+            <button class="write" type="submit" onclick="login()">로그인</button>
         </form>
 
 

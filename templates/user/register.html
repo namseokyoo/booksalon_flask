@@ -14,27 +14,27 @@
     {% include 'header.html' %}
     <div class="content">
         <form class="register-form" id="register" method="POST">
+            <label class="userId">이메일</label>
             <div class="register-form_section">
-                <label class="userId">이메일 :</label>
-                <input id="userId" type="email" name="userId" required>
+                <input id="userId" type="email" placeholder="이메일 주소" name="userId" required>
+                <a class="btn" onclick="checkId()">중복확인</a>
             </div>
-            <a class="btn" onclick="checkId()">중복확인</a>
 
+            <label class="userId">비밀번호(영문 대소문자 및 숫자 4~12자리) </label>
             <div class="register-form_section">
-                <label class="userId">비밀번호 : </label>
-                <input id="password1" type="password" name="password" required>
+                <input id="password1" type="password" placeholder="비밀번호" name="password" required>
             </div>
+            <label class="userId">비밀번호 확인 </label>
             <div class="register-form_section">
-                <label class="userId">비밀번호 확인: </label>
-                <input id="password2" type="password" name="repassword" required>
+                <input id="password2" type="password" placeholder="비밀번호확인" name="repassword" required>
             </div>
+            <label class="userId">닉네임(한글, 영문 대소문자, 숫자로 2~12자리)</label>
             <div class="register-form_section">
-                <label class="userId">닉네임 : </label>
-                <input id="userName" type="text" name="userName" required>
+                <input id="userName" type="text" placeholder="닉네임" name="userName" required>
+                <a class="btn" onclick="checkName()">중복확인</a>
             </div>
-            <a class="btn" onclick="checkName()">중복확인</a>
 
-            <button type="submit" onclick="register()">회원가입</button>
+            <button class="write" type="submit" onclick="register()">회원가입</button>
         </form>
 
 

@@ -60,15 +60,6 @@ def login():
         return render_template('user/login.html')
     else:
         userId = request.form['userId']
-        # password = request.form['password']
-        # userId_db = list(db.user.find({'userId': userId}))
-        # if userId_db == []:
-        #     return jsonify({'result': 'success', 'checkResult': 'unusable'})
-        # else:
-        #     password_db = list(db.user.find({'userId': userId}))[0]['password']
-        #     if password_db != password:
-        #         return jsonify({'result': 'success', 'checkResult': 'unusable'})
-        #     else:
         session['userId'] = userId
         return redirect('/')
 
@@ -119,10 +110,13 @@ def register():
         password = request.form['password']
         re_password = request.form['repassword']
         userName = request.form['userName']
+        t = datetime.now() + timedelta(hours=9)
+        regDate = t.strftime('%Y/%m/%d %H:%M:%S')
         user_db = {
             'userId': userId,
             'password': password,
             'userName': userName,
+            'regDate': regDate,
         }
         db.user.insert_one(user_db)
         return redirect('/login')
