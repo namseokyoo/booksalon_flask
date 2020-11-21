@@ -1,3 +1,7 @@
+.detail_board {
+    width: 100%;
+}
+
 .edit {
     display: flex;
     justify-content: flex-end;
