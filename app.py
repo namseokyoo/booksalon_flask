@@ -110,7 +110,7 @@ def register():
         password = request.form['password']
         re_password = request.form['repassword']
         userName = request.form['userName']
-        t = datetime.now() + timedelta(hours=0)
+        t = datetime.now() + timedelta(hours=9)
         regDate = t.strftime('%Y/%m/%d %H:%M:%S')
         user_db = {
             'userId': userId,
