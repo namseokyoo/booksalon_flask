@@ -13,7 +13,7 @@ function loginheader(userName){
     } else{
         loginSuccess.style.display = 'inline-block';
         registerLink.style.display = 'none';
-        userid.innerText = `${userName}님 반갑습니다.`
+        userid.innerText = `${userName}님`
     }
 
 }
@@ -30,8 +30,14 @@ function checklogin(){
     })
 }
 
+function dropdownMenu(){
+    document.querySelector('.dropdown-menu').classList.toggle("show");
+}
+
+
 function init(){
     checklogin();
 }
+
 
 init();

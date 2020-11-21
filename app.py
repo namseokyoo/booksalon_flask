@@ -110,7 +110,7 @@ def register():
         password = request.form['password']
         re_password = request.form['repassword']
         userName = request.form['userName']
-        t = datetime.now() + timedelta(hours=9)
+        t = datetime.now() + timedelta(hours=0)
         regDate = t.strftime('%Y/%m/%d %H:%M:%S')
         user_db = {
             'userId': userId,
@@ -146,6 +146,16 @@ def search():
         }
         booklists.append(book)
     return render_template('search.html', booklists=booklists, param=param)
+
+
+@app.route('/mypage')
+def mypage():
+    if 'userId' in session:
+        userId = session.get('userId', None)
+        userData = list(db.user.find({'userId': userId}))[0]
+        return render_template('user/mypage.html', userData=userData)
+    else:
+        return '로그인 하고 오셈'
 
 
 @app.route('/bookboard')

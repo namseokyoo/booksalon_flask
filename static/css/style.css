@@ -14,6 +14,7 @@
 @import "recentbooks.css";
 @import "recentquestions.css";
 @import "register.css";
+@import "login.css";
 
 @import "component/boardtitle.css";
 @import "component/user.css";
