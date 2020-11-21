@@ -9,7 +9,7 @@
     height: 25px;
     background-color: var(--blue);
     border-radius: 5px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     color: white;
@@ -104,4 +104,18 @@ i {
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 120%;
+}
+
+.btn-logincheck {
+    width: 80px;
+    height: 25px;
+    background-color: var(--blue);
+    border-radius: 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 10px;
+    border: none;
+    font-size: 12px;
 }
