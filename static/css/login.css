@@ -1,0 +1,17 @@
+.login-title {
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.register-form button {
+    margin: 10px;
+}
+
+.register-form {
+    margin-bottom: 10px;
+}
+
+.login__register-link {
+    text-decoration: underline;
+}

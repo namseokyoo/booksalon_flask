@@ -1,4 +1,4 @@
-.board {
+.list-board {
     width: inherit;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .write_question {
-    display: flex;
+    display: none;
     justify-content: flex-end;
 }
 

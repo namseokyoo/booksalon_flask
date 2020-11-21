@@ -20,77 +20,106 @@ load_dotenv()
 FLASKHOST = os.getenv('FLASKHOST')
 PORT = os.getenv('PORT')
 uri = os.getenv('URI')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 client = MongoClient(uri)
 db = client.booksalon
 
 app = Flask(__name__)
 
-
-class MongoSession(CallbackDict, SessionMixin):
-    def __init__(self, initial=None, sid=None):
-        CallbackDict.__init__(self, initial)
-        self.sid = sid
-        self.modified = False
-
-
-class MongoSessinoInterface(SessionInterface):
-    def __init__(self, host='localhost', port=27017,
-                 db='', collection='sessions'):
-        self.store = client[db][collection]
-
-    def open_session(self, app, request):
-        sid = request.cookies.get(app.session_cookie_name)
-        if sid:
-            stored_session = self.store.find_one({'sid': sid})
-            if stored_session:
-                if stored_session.get('expiration') > datetime.utcnow():
-                    return MongoSession(initial=stored_session['data'],
-                                        sid=stored_session['sid'])
-        sid = str(uuid4())
-        return MongoSession(sid=sid)
-
-    def save_session(self, app, session, response):
-        domain = self.get_cookie_domain(app)
-        if session is None:
-            response.delete_cookie(app.session_cookie_name, domain=domain)
-            return
-        if self.get_expiration_time(app, session):
-            expiration = self.get_expiration_time(app, session)
-        else:
-            expiration = datetime.utcnow() + timedelta(hours=1)
-
-        self.store.update({'sid': session.sid}, {
-            'sid': session.sid,
-            'data': session,
-            'expiration': expiration
-        }, True)
-        response.set_cookie(app.session_cookie_name,
-                            session.sid,
-                            expires=self.get_expiration_time(app, session),
-                            httponly=True, domain=domain)
-
-
-app.session_interface = MongoSessinoInterface(db='session')
-app.config.update(
-    SESSION_COOKIE_NAME='flask_session'
-)
+app.config['SECRET_KEY'] = SECRET_KEY
 
 
 @app.route('/')
 def home():
+    if 'userId' in session:
+        login_id = session.get('userId', None)
+    else:
+        login_id = ''
     recent_booklists = list(db.booklists.find({}).sort('_id', -1).limit(3))
     recent_questionlists = list(db.questions.find({}).sort('_id', -1).limit(5))
 
     res = make_response(render_template(
-        'index.html', recent_questionlists=recent_questionlists, recent_booklists=recent_booklists))
-    res.set_cookie(app.session_cookie_name, session.sid)
+        'index.html', recent_questionlists=recent_questionlists, recent_booklists=recent_booklists, login_id=login_id))
     return res
 
 
-@app.route('/register')
+@app.route('/getusername')
+def getusername():
+    if 'userId' in session:
+        userId = session.get('userId', None)
+        userName = list(db.user.find({'userId': userId}))[0]['userName']
+    else:
+        userName = ''
+    return jsonify({'result': 'success', 'userName': userName})
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'GET':
+        return render_template('user/login.html')
+    else:
+        userId = request.form['userId']
+        session['userId'] = userId
+        return redirect('/')
+
+
+@app.route('/logout')
+def logout():
+    session.pop('userId', None)
+    return redirect('/')
+
+
+@app.route('/checkid', methods=['POST'])
+def checkId():
+    inputId = request.form['inputId']
+    id_db = list(db.user.find({'userId': inputId}))
+    if id_db == []:
+        return jsonify({'result': 'success', 'checkResult': 'usable'})
+    else:
+        return jsonify({'result': 'success', 'checkResult': 'unusable'})
+
+
+@app.route('/checkpassword', methods=['POST'])
+def checkpassword():
+    inputId = request.form['inputId']
+    inputpassword = request.form['inputpassword']
+    password_db = list(db.user.find({'userId': inputId}))[0]['password']
+    if password_db == inputpassword:
+        return jsonify({'result': 'success', 'checkResult': 'success'})
+    else:
+        return jsonify({'result': 'success', 'checkResult': 'fail'})
+
+
+@app.route('/checkusername', methods=['POST'])
+def checkUserName():
+    inputUserName = request.form['inputUserName']
+    name_db = list(db.user.find({'userName': inputUserName}))
+    if name_db == []:
+        return jsonify({'result': 'success', 'checkResult': 'usable'})
+    else:
+        return jsonify({'result': 'success', 'checkResult': 'unusable'})
+
+
+@app.route('/register', methods=['GET', 'POST'])
 def register():
-    return render_template('user/register.html')
+    if request.method == 'GET':
+        return render_template('user/register.html')
+    else:
+        userId = request.form['userId']
+        password = request.form['password']
+        re_password = request.form['repassword']
+        userName = request.form['userName']
+        t = datetime.now() + timedelta(hours=0)
+        regDate = t.strftime('%Y/%m/%d %H:%M:%S')
+        user_db = {
+            'userId': userId,
+            'password': password,
+            'userName': userName,
+            'regDate': regDate,
+        }
+        db.user.insert_one(user_db)
+        return redirect('/login')
 
 
 @app.route('/search')
@@ -119,6 +148,21 @@ def search():
     return render_template('search.html', booklists=booklists, param=param)
 
 
+@app.route('/mypage')
+def mypage():
+    if 'userId' in session:
+        userId = session.get('userId', None)
+        userData = list(db.user.find({'userId': userId}))[0]
+        return render_template('user/mypage.html', userData=userData)
+    else:
+        return '로그인 하고 오셈'
+
+
+@app.route('/bookshelf')
+def bookshelf():
+    return render_template('bookshelf.html')
+
+
 @app.route('/bookboard')
 def bookboard():
     param_isbn = request.args['book']
@@ -137,14 +181,15 @@ def bookboard():
 
 @app.route('/write_question', methods=['get', 'post'])
 def write_question():
+    userId = session.get('userId', None)
+    writer = list(db.user.find({'userId': userId}))[0]['userName']
     param_isbn = request.args['book']
     book_db = list(db.booklists.find({"isbn": param_isbn}))
     if book_db == []:
         book = addbook(param_isbn)
         db.booklists.insert_one(book)
     title = list(db.booklists.find({'isbn': param_isbn}))[0]['title']
-    writer = request.form['writer']
-    password = request.form['password']
+    password = list(db.user.find({'userId': userId}))[0]['password']
     question_title = request.form['question_title']
     question = request.form['question']
     t = datetime.now() + timedelta(hours=9)
@@ -168,10 +213,11 @@ def write_question():
 
 @app.route('/write_reply', methods=['get', 'post'])
 def write_reply():
+    userId = session.get('userId', None)
+    reply_writer = list(db.user.find({'userId': userId}))[0]['userName']
     q_id = request.args['qid']
     reply_id = shortuuid.uuid()
-    reply_writer = request.form['reply-writer']
-    reply_password = request.form['reply-password']
+    reply_password = list(db.user.find({'userId': userId}))[0]['password']
     reply_text = request.form['reply-text']
     reply_t = datetime.now() + timedelta(hours=9)
     reply_time = reply_t.strftime('%Y/%m/%d %H:%M:%S')
@@ -223,15 +269,16 @@ def checkpw():
 
 @app.route('/check_password', methods=['get', 'post'])
 def check_password():
+    userId = session.get('userId', None)
     q_id = request.args['qid']
-    pw_input = request.form["password"]
+    password = list(db.user.find({'userId': userId}))[0]['password']
     type = request.args['type']
     param_isbn = list(db.questions.find({"q_id": q_id}))[0]['isbn']
     if type == "reply":
         reply_id = request.args['reply_id']
         pw_reply_db = list(db.questions.find(
             {"reply_db": {"$elemMatch": {"reply_id": reply_id}}}, {"reply_db": {"$elemMatch": {"reply_id": reply_id}}}))[0]['reply_db'][0]['reply_password']
-        if pw_input == pw_reply_db:
+        if password == pw_reply_db:
             db.questions.update(
                 {"q_id": q_id}, {"$pull": {"reply_db": {"reply_id": reply_id}}}, True, {"multi": True})
             db.questions.update({"q_id": q_id}, {"$inc": {'reply': -1}})
@@ -242,7 +289,7 @@ def check_password():
         book_db = list(db.questions.find({"q_id": q_id}))[0]
         pw_db = book_db['password']
         param_isbn = book_db['isbn']
-        if pw_input == pw_db:
+        if password == pw_db:
             db.questions.remove({"q_id": q_id})
             if (list(db.questions.find({"isbn": param_isbn})) == []):
                 db.booklists.remove({"isbn": param_isbn})

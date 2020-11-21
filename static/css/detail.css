@@ -18,6 +18,10 @@
     font-size: 12px;
 }
 
+.delete_reply {
+    display: none;
+}
+
 i {
     margin-right: 5px;
 }

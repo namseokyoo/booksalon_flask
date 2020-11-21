@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <script src="static/js/function.js"></script>
     <title>Welcome to Booksalon</title>
 </head>
 
@@ -17,7 +16,7 @@
         {% include 'bookinfo.html' %}
 
 
-        <div class="board">
+        <div class="list-board">
             <div>
                 <span class="board__title">질문리스트</span> <span class="board__desc"> | 책에대해 궁금한 질문들 입니다.</span>
             </div>
@@ -56,6 +55,7 @@
     </div>
     {% include 'footer.html' %}
     <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/static/js/bookboard.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,12 @@
+.warning {
+    display: none;
+}
+
+.board {
+    display: none;
+    width: 100%;
+}
+
 .question-info {
     display: flex;
     justify-content: flex-start;

@@ -7,5 +7,41 @@
 .register-form {
     display: flex;
     flex-direction: column;
-    align-content: flex-startgi;
+    align-items: flex-start;
+}
+
+.register-form_section {
+    display: flex;
+    width: 100%;
+}
+
+.register-form label {
+    margin-right: 10px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.register-form_section input {
+    border: none;
+    border-bottom: var(--border_line);
+    width: 100%;
+    border-radius: 0px;
+}
+
+.register-form_section a {
+    cursor: pointer;
+    margin-left: -2px;
+    position: relative;
+    top: 3px;
+}
+
+.register-form_section input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.register-form button {
+    width: 50%;
+    cursor: pointer;
+    align-self: center;
 }
