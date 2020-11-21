@@ -269,16 +269,22 @@ def checkpw():
 
 @app.route('/check_password', methods=['get', 'post'])
 def check_password():
-    userId = session.get('userId', None)
     q_id = request.args['qid']
-    password = list(db.user.find({'userId': userId}))[0]['password']
     type = request.args['type']
-    param_isbn = list(db.questions.find({"q_id": q_id}))[0]['isbn']
+
+    userId = session.get('userId', None)
+    userName_db = list(db.user.find({'userId': userId}))[0]['userName']
+    password = list(db.user.find({'userId': userId}))[0]['password']
+
+    question_db = list(db.questions.find({"q_id": q_id}))[0]
+    userName = question_db['writer']
+    param_isbn = question_db['isbn']
+
     if type == "reply":
         reply_id = request.args['reply_id']
         pw_reply_db = list(db.questions.find(
             {"reply_db": {"$elemMatch": {"reply_id": reply_id}}}, {"reply_db": {"$elemMatch": {"reply_id": reply_id}}}))[0]['reply_db'][0]['reply_password']
-        if password == pw_reply_db:
+        if password == pw_reply_db and userName == userName_db:
             db.questions.update(
                 {"q_id": q_id}, {"$pull": {"reply_db": {"reply_id": reply_id}}}, True, {"multi": True})
             db.questions.update({"q_id": q_id}, {"$inc": {'reply': -1}})
@@ -286,10 +292,8 @@ def check_password():
         else:
             return redirect(f'/detail?book={param_isbn}&qid={q_id}')
     else:
-        book_db = list(db.questions.find({"q_id": q_id}))[0]
-        pw_db = book_db['password']
-        param_isbn = book_db['isbn']
-        if password == pw_db:
+        pw_db = question_db['password']
+        if password == pw_db and userName == userName_db:
             db.questions.remove({"q_id": q_id})
             if (list(db.questions.find({"isbn": param_isbn})) == []):
                 db.booklists.remove({"isbn": param_isbn})
