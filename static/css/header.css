@@ -68,7 +68,7 @@ nav {
 
 .header-manu {
     width: 100px;
-    height: 150px;
+    height: 100px;
     background-color: #62aeec;
     z-index: 80;
     display: flex;

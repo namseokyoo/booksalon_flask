@@ -158,6 +158,11 @@ def mypage():
         return '로그인 하고 오셈'
 
 
+@app.route('/bookshelf')
+def bookshelf():
+    return render_template('bookshelf.html')
+
+
 @app.route('/bookboard')
 def bookboard():
     param_isbn = request.args['book']
