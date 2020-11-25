@@ -1,71 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block content %}
 
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <title>Welcome to Booksalon</title>
-</head>
-
-<body>
-    {% include 'header.html' %}
-    {%include 'searchbox.html'%}
-    <div class="content">
-        <a href="/recentbooks">
-            <span class="recent">최근 이야기 나누고 있는 책</span>
-            <span class="recent__more"> 더보기</span>
-        </a>
-        <div class="recent-book">
-            {% for recent_booklist in recent_booklists %}
-            <a href="/bookboard?book={{recent_booklist.isbn}}">
-                <div class="recent-book__info">
-                    <div class="recent-book__info__detail"><img class="recent-book__image"
-                            src="{{recent_booklist.imgUrl}}"></div>
-                    <div class="recent-book__info__detail">
-                        <div class="recent-book__title">{{recent_booklist.title}}</div>
-                        <div class="recent-book__author">{% for author in recent_booklist.author %}{{author}}
-                            {% endfor %}
-                        </div>
+{%include 'component/searchbox.html'%}
+<div class="content">
+    <a href="/recentbooks">
+        <span class="recent">최근 이야기 나누고 있는 책</span>
+        <span class="recent__more"> 더보기</span>
+    </a>
+    <div class="recent-book">
+        {% for recent_booklist in recent_booklists %}
+        <a href="/bookboard?book={{recent_booklist.isbn}}">
+            <div class="recent-book__info">
+                <div class="recent-book__info__detail"><img class="recent-book__image" src="{{recent_booklist.imgUrl}}">
+                </div>
+                <div class="recent-book__info__detail">
+                    <div class="recent-book__title">{{recent_booklist.title}}</div>
+                    <div class="recent-book__author">{% for author in recent_booklist.author %}{{author}}
+                        {% endfor %}
                     </div>
                 </div>
-            </a>
-            {% endfor %}
-        </div>
-        <a href="/recentquestions">
-            <span class="recent">최근 책 이야기</span>
-            <span class="recent__more"> 더보기</span>
-
-
+            </div>
         </a>
-        <div class="recent-question">
-            <ul>
-                {% if recent_questionlists is defined %}
-                {% for recent_questionlist in recent_questionlists %}
-                <li class="recent-question__list">
-                    <div class="recent-question__booktitle">
-                        &#60;{{recent_questionlist.title}}&#62;
-                    </div>
-                    <div class="recent-question__title_info">
-                        <div class="recent-question__title">
-                            <a href="/detail?book={{recent_questionlist.isbn}}&qid={{recent_questionlist.q_id}}">{{recent_questionlist.question_title}}
-                            </a></div>
-                        <div class="reply">{{recent_questionlist.reply}}</div>
-                    </div>
-                </li>
-                {% endfor %}
-                {% else %}
-                {% endif %}
-            </ul>
-        </div>
+        {% endfor %}
     </div>
-    {% include 'footer.html' %}
-    <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
+    <a href="/recentquestions">
+        <span class="recent">최근 책 이야기</span>
+        <span class="recent__more"> 더보기</span>
+    </a>
+    <div class="recent-question">
+        <ul>
+            {% if recent_questionlists is defined %}
+            {% for recent_questionlist in recent_questionlists %}
+            <li class="recent-question__list">
+                <div class="recent-question__booktitle">
+                    &#60;{{recent_questionlist.title}}&#62;
+                </div>
+                <div class="recent-question__title_info">
+                    <div class="recent-question__title">
+                        <a href="/detail?book={{recent_questionlist.isbn}}&qid={{recent_questionlist.q_id}}">{{recent_questionlist.question_title}}
+                        </a></div>
+                    <div class="reply">{{recent_questionlist.reply}}</div>
+                </div>
+            </li>
+            {% endfor %}
+            {% else %}
+            {% endif %}
+        </ul>
+    </div>
+</div>
 
-
-</body>
-
-</html>
+{% endblock content %}

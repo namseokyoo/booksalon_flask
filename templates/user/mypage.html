@@ -1,42 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <title>Welcome to Booksalon</title>
-</head>
-
-<body>
-    {% include 'header.html' %}
-    <div class="content">
-
-        <div class="login-title">마이페이지</div>
-        <div class="user-info-box">
-            <div class="user-info-subbox">
-                <div class="user-info__label">이메일 : </div>
-                <div class="user-info">{{userData.userId}}</div>
-            </div>
-            <div class="user-info-subbox">
-                <div class=" user-info__label">닉네임 : </div>
-                <div class="user-info">{{userData.userName}}</div>
-            </div>
-            <div class="user-info-subbox">
-                <div class=" user-info__label">가입일 : </div>
-                <div class="user-info">{{userData.regDate}}</div>
-            </div>
+<div class="content">
+    <div class="login-title">마이페이지</div>
+    <div class="user-info-box">
+        <div class="user-info-subbox">
+            <div class="user-info__label">이메일 : </div>
+            <div class="user-info">{{userData.userId}}</div>
         </div>
-
+        <div class="user-info-subbox">
+            <div class=" user-info__label">닉네임 : </div>
+            <div class="user-info">{{userData.userName}}</div>
+        </div>
+        <div class="user-info-subbox">
+            <div class=" user-info__label">가입일 : </div>
+            <div class="user-info">{{userData.regDate}}</div>
+        </div>
     </div>
-    {% include 'footer.html' %}
-    <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script type="text/javascript" src="/static/js/user/register.js"></script>
 
-</body>
+</div>
 
-</html>
+{% endblock content %}

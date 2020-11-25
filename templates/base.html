@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>북살롱</title>
+</head>
+
+<body>
+    {% include 'component/header.html' %}
+
+    {% block content %}
+    {% endblock%}
+
+    {% include 'component/footer.html' %}
+    <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script type="text/javascript" src="/static/js/user/register.js"></script>
+    <script type="text/javascript" src="/static/js/user/login.js"></script>
+    <script type="text/javascript" src="/static/js/user/login-header.js"></script>
+    <script type="text/javascript" src="/static/js/bookboard.js"></script>
+    <script type="text/javascript" src="/static/js/detail.js"></script>
+    <script type="text/javascript" src="/static/js/write.js"></script>
+</body>
+
+</html>

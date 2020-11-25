@@ -1,38 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block content %}
 
-<head>
-    <link rel="stylesheet" href="static/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Booksalon</title>
-</head>
-
-<body>
-    {% include 'header.html' %}
-    <div class="content">
-        {% include 'bookinfo.html' %}
-        <div class="warning">
-            질문글을 작성려면 로그인 해주세요!
-        </div>
-        <div class="board">
-            <form action="/write_question?book={{book.isbn}}" method="post">
-                <div>
-                    <input class="question__title" type="text" name="question_title" placeholder=" 제목을 입력하세요"
-                        required />
-                </div>
-                <div>
-                    <textarea class="question__text" name="question" placeholder=" 질문 내용을 입력하세요" required></textarea>
-                </div>
-                <div class="submit">
-                    <button class="btn" type="submit"><i class="fas fa-paper-plane"></i>보내기</button>
-                </div>
-            </form>
-        </div>
+<div class="content">
+    {% include 'bookinfo.html' %}
+    <div class="warning">
+        질문글을 작성려면 로그인 해주세요!
     </div>
-    {% include 'footer.html' %}
-    <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/static/js/write.js"></script>
-</body>
+    <div class="board">
+        <form action="/write_question?book={{book.isbn}}" method="post">
+            <div>
+                <input class="question__title" type="text" name="question_title" placeholder=" 제목을 입력하세요" required />
+            </div>
+            <div>
+                <textarea class="question__text" name="question" placeholder=" 질문 내용을 입력하세요" required></textarea>
+            </div>
+            <div class="submit">
+                <button class="btn" type="submit"><i class="fas fa-paper-plane"></i>보내기</button>
+            </div>
+        </form>
+    </div>
+</div>
 
-</html>
+{% endblock content %}

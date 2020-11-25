@@ -256,15 +256,15 @@ def detail():
     return render_template("detail.html", book=book, detail=detail[0])
 
 
-@app.route('/checkpw')
-def checkpw():
-    q_id = request.args['qid']
-    type = request.args['type']
-    if type == "reply":
-        reply_id = request.args['reply_id']
-        return render_template("checkpassword.html", q_id=q_id, reply_id=reply_id, type=type)
-    else:
-        return render_template("checkpassword.html", q_id=q_id, type=type)
+# @app.route('/checkpw')
+# def checkpw():
+#     q_id = request.args['qid']
+#     type = request.args['type']
+#     if type == "reply":
+#         reply_id = request.args['reply_id']
+#         return render_template("checkpassword.html", q_id=q_id, reply_id=reply_id, type=type)
+#     else:
+#         return render_template("checkpassword.html", q_id=q_id, type=type)
 
 
 @app.route('/check_password', methods=['get', 'post'])

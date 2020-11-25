@@ -1,51 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <title>Welcome to Booksalon</title>
-</head>
+<div class="content">
+    <div class="login-title">북살롱 회원가입</div>
+    <form class="register-form" id="register" method="POST">
+        <label class="userId">이메일</label>
+        <div class="register-form_section">
+            <input id="userId" type="email" placeholder="이메일 주소" name="userId" required>
+            <a class="btn" onclick="checkId()">중복확인</a>
+        </div>
 
-<body>
-    {% include 'header.html' %}
-    <div class="content">
-        <div class="login-title">북살롱 회원가입</div>
-        <form class="register-form" id="register" method="POST">
-            <label class="userId">이메일</label>
-            <div class="register-form_section">
-                <input id="userId" type="email" placeholder="이메일 주소" name="userId" required>
-                <a class="btn" onclick="checkId()">중복확인</a>
-            </div>
+        <label class="userId">비밀번호(영문 대소문자 및 숫자 4~12자리) </label>
+        <div class="register-form_section">
+            <input id="password1" type="password" placeholder="비밀번호" name="password" required>
+        </div>
+        <label class="userId">비밀번호 확인 </label>
+        <div class="register-form_section">
+            <input id="password2" type="password" placeholder="비밀번호확인" name="repassword" required>
+        </div>
+        <label class="userId">닉네임(한글, 영문 대소문자, 숫자로 2~12자리)</label>
+        <div class="register-form_section">
+            <input id="userName" type="text" placeholder="닉네임" name="userName" required>
+            <a class="btn" onclick="checkName()">중복확인</a>
+        </div>
 
-            <label class="userId">비밀번호(영문 대소문자 및 숫자 4~12자리) </label>
-            <div class="register-form_section">
-                <input id="password1" type="password" placeholder="비밀번호" name="password" required>
-            </div>
-            <label class="userId">비밀번호 확인 </label>
-            <div class="register-form_section">
-                <input id="password2" type="password" placeholder="비밀번호확인" name="repassword" required>
-            </div>
-            <label class="userId">닉네임(한글, 영문 대소문자, 숫자로 2~12자리)</label>
-            <div class="register-form_section">
-                <input id="userName" type="text" placeholder="닉네임" name="userName" required>
-                <a class="btn" onclick="checkName()">중복확인</a>
-            </div>
-
-            <button class="write" type="submit" onclick="register()">회원가입</button>
-        </form>
+        <button class="write" type="submit" onclick="register()">회원가입</button>
+    </form>
 
 
-    </div>
-    {% include 'footer.html' %}
-    <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script type="text/javascript" src="/static/js/user/register.js"></script>
+</div>
 
-</body>
 
-</html>
+{% endblock content %}

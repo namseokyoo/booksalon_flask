@@ -1,54 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
-    <title>Welcome to Booksalon</title>
-</head>
+{%include 'component/searchbox.html'%}
 
-<body>
-    {% include 'header.html' %}
-    {%include 'searchbox.html'%}
-    <div class="content">
-        <a href="/recentquestions">
-            <div class="board-name">
-                <div>
-                    <h3 class="recent-questions">책 이야기</h3>
-                </div>
-                <i class="fas fa-angle-right"></i>
+<div class="content">
+    <a href="/recentquestions">
+        <div class="board-name">
+            <div>
+                <h3 class="recent-questions">책 이야기</h3>
             </div>
-        </a>
-        <div class="recent-questions__list">
-            <ul>
-                {% if recent_questionlists is defined %}
-                {% for recent_questionlist in recent_questionlists %}
-                <li class="recent-question__list">
-                    <div class="recent-question__booktitle">
-                        &#60;{{recent_questionlist.title}}&#62;
-                    </div>
-                    <div class="recent-question__title_info">
-                        <div class="recent-question__title">
-                            <a href="/detail?book={{recent_questionlist.isbn}}&qid={{recent_questionlist.q_id}}">
-                                {{recent_questionlist.question_title}}
-                            </a>
-                        </div>
-                        <div class="reply">{{recent_questionlist.reply}}</div>
-                    </div>
-                </li>
-                {% endfor %}
-                {% else %}
-                {% endif %}
-            </ul>
+            <i class="fas fa-angle-right"></i>
         </div>
+    </a>
+    <div class="recent-questions__list">
+        <ul>
+            {% if recent_questionlists is defined %}
+            {% for recent_questionlist in recent_questionlists %}
+            <li class="recent-question__list">
+                <div class="recent-question__booktitle">
+                    &#60;{{recent_questionlist.title}}&#62;
+                </div>
+                <div class="recent-question__title_info">
+                    <div class="recent-question__title">
+                        <a href="/detail?book={{recent_questionlist.isbn}}&qid={{recent_questionlist.q_id}}">
+                            {{recent_questionlist.question_title}}
+                        </a>
+                    </div>
+                    <div class="reply">{{recent_questionlist.reply}}</div>
+                </div>
+            </li>
+            {% endfor %}
+            {% else %}
+            {% endif %}
+        </ul>
     </div>
+</div>
 
-    {% include 'footer.html' %}
-    <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+{% endblock content %}

@@ -1,73 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% block content %}
 
-<head>
-    <link rel="stylesheet" href="static/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Booksalon</title>
-</head>
-
-<body>
-    {% include 'header.html' %}
-    <div class="content">
-        {% include 'bookinfo.html' %}
-
-        <div class="detail_board">
-            <div class="detail__question-info">
-                <div class="question-info__column">
-                    <div class="detail__question-title">
-                        {{detail.question_title}}
-                    </div>
-                </div>
-                <div class="question-info__column">
-                    <div class="detail__question-info__writer">
-                        {{detail.writer}}
-                    </div>
-                    <div class="post_time">
-                        {{detail.post_time}}
-                    </div>
+<div class="content">
+    {% include 'bookinfo.html' %}
+    <div class="detail_board">
+        <div class="detail__question-info">
+            <div class="question-info__column">
+                <div class="detail__question-title">
+                    {{detail.question_title}}
                 </div>
             </div>
-            <div>
-                <p class="detail__question__text" style="white-space:pre-line;">
-                    {{detail.question}}
-                </p>
+            <div class="question-info__column">
+                <div class="detail__question-info__writer">
+                    {{detail.writer}}
+                </div>
+                <div class="post_time">
+                    {{detail.post_time}}
+                </div>
             </div>
-            <div class="edit">
-                <button class="delete" type="button"
-                    onclick="location.href='/check_password?qid={{detail.q_id}}&type=q'">
-                    <i class="fas fa-trash-alt"></i><span>삭제</span></button>
-            </div>
-
-            <i class="fab fa-replyd fa-2x"></i>
-            <div class="replies">
-                <ul>
-                    {%for reply in detail.reply_db %}
-                    <li class="reply_data">
-                        <div class="reply__top">
-                            <div class="reply_writer">
-                                {{reply.reply_writer}}
-                            </div>
-                            <div class="reply_time">{{reply.reply_time}} |
-                                <a class="delete_reply"
-                                    href="/check_password?qid={{detail.q_id}}&reply_id={{reply.reply_id}}&type=reply"><i
-                                        class="fas fa-trash-alt"></i></a>
-                            </div>
+        </div>
+        <div>
+            <p class="detail__question__text" style="white-space:pre-line;">
+                {{detail.question}}
+            </p>
+        </div>
+        <div class="edit">
+            <button class="delete" type="button" onclick="location.href='/check_password?qid={{detail.q_id}}&type=q'">
+                <i class="fas fa-trash-alt"></i><span>삭제</span></button>
+        </div>
+        <i class="fab fa-replyd fa-2x"></i>
+        <div class="replies">
+            <ul>
+                {%for reply in detail.reply_db %}
+                <li class="reply_data">
+                    <div class="reply__top">
+                        <div class="reply_writer">
+                            {{reply.reply_writer}}
                         </div>
-                        <div class="reply__bottom">
-                            <div class="reply_text">
-                                {{reply.reply_text}}
-                            </div>
+                        <div class="reply_time">{{reply.reply_time}} |
+                            <a class="delete_reply"
+                                href="/check_password?qid={{detail.q_id}}&reply_id={{reply.reply_id}}&type=reply"><i
+                                    class="fas fa-trash-alt"></i></a>
                         </div>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-
-            <div class="reply_box">
-                <form action="/write_reply?qid={{detail.q_id}}" method="post">
-                    <!-- <div class="question-info">
+                    </div>
+                    <div class="reply__bottom">
+                        <div class="reply_text">
+                            {{reply.reply_text}}
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="reply_box">
+            <form action="/write_reply?qid={{detail.q_id}}" method="post">
+                <!-- <div class="question-info">
                         <div class="question-info__writer">
                             <span>
                                 작성자 :
@@ -81,21 +68,16 @@
                             <input class="question-info__password-input" name="reply-password" type="text" required />
                         </div>
                     </div> -->
-                    <div>
-                        <textarea class="question__text reply_question__text" name="reply-text" placeholder=""
-                            required></textarea>
-                    </div>
-                    <div class="submit">
-                        <button class="btn-logincheck" type="submit"><i class="fas fa-paper-plane"></i>보내기</button>
-                    </div>
-                </form>
-            </div>
+                <div>
+                    <textarea class="question__text reply_question__text" name="reply-text" placeholder=""
+                        required></textarea>
+                </div>
+                <div class="submit">
+                    <button class="btn-logincheck" type="submit"><i class="fas fa-paper-plane"></i>보내기</button>
+                </div>
+            </form>
         </div>
     </div>
-    {% include 'footer.html' %}
+</div>
 
-    <script src="https://kit.fontawesome.com/44da77f87a.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/static/js/detail.js"></script>
-</body>
-
-</html>
+{% endblock content %}
