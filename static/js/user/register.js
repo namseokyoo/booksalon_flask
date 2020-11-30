@@ -166,8 +166,23 @@ function register(){
     const inputId = document.querySelector('#userId');
     const password1 = document.querySelector('#password1');
     const password2 = document.querySelector('#password2');
+    const terms = document.querySelector('#terms-and-conditions');
+    const privacy = document.querySelector('#privacy-policy');
 
-    if(checkIdCount === 0){
+
+    if(terms.checked ===false){
+        Swal.fire({
+            icon: 'info',
+            text: '서비스 이용약관 동의는 필수입니다.',
+            })
+        event.preventDefault ();
+    }else if(privacy.checked ===false){
+        Swal.fire({
+            icon: 'info',
+            text: '개인정보처리방침 동의는 필수입니다.',
+            })
+        event.preventDefault ();
+    }else if(checkIdCount === 0){
         Swal.fire({
             icon: 'info',
             text: '이메일 중복확인을 해주세요',

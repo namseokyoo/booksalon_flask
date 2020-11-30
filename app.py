@@ -314,6 +314,16 @@ def recentquestions():
     return render_template('recentquestions.html', recent_questionlists=recent_questionlists)
 
 
+@app.route('/terms-and-conditions')
+def terms_and_conditions():
+    return render_template('policies/terms-and-conditions.html')
+
+
+@app.route('/privacy-policy')
+def privacy_policy():
+    return render_template('policies/privacy-policy.html')
+
+
 if __name__ == "__main__":
 
     app.run(host=FLASKHOST, port=PORT, debug='True')
