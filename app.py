@@ -11,6 +11,8 @@ from bson import ObjectId
 from dotenv import load_dotenv
 from flask.sessions import SessionInterface, SessionMixin
 from werkzeug.datastructures import CallbackDict
+from flask_bcrypt import Bcrypt
+
 
 from book_api import getbook
 from addbook import addbook
@@ -28,6 +30,8 @@ db = client.booksalon
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = SECRET_KEY
+app.config['BCRYPT_LEVEL'] = 10
+bcrypt = Bcrypt(app)
 
 
 @app.route('/')
@@ -85,7 +89,7 @@ def checkpassword():
     inputId = request.form['inputId']
     inputpassword = request.form['inputpassword']
     password_db = list(db.user.find({'userId': inputId}))[0]['password']
-    if password_db == inputpassword:
+    if bcrypt.check_password_hash(password_db, inputpassword):
         return jsonify({'result': 'success', 'checkResult': 'success'})
     else:
         return jsonify({'result': 'success', 'checkResult': 'fail'})
@@ -112,6 +116,7 @@ def register():
         userName = request.form['userName']
         t = datetime.now() + timedelta(hours=9)
         regDate = t.strftime('%Y/%m/%d %H:%M:%S')
+        password = bcrypt.generate_password_hash(password)
         user_db = {
             'userId': userId,
             'password': password,
