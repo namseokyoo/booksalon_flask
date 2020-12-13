@@ -36,12 +36,12 @@ def getbook(booktitle):
     r = session.get(api_url)
 
     if r.status_code != 200:
-        print("[%d Error] %s" % (r.status_code, r.reason))
+        # print("[%d Error] %s" % (r.status_code, r.reason))
         quit()
 
     r.encoding = "urf-8"
     book_dict = json.loads(r.text)
 
     documents += book_dict['documents']
-    print(documents)
+    # print(documents)
     return(documents)
