@@ -13,8 +13,12 @@
             <div class="user-info">{{userData.userName}}</div>
         </div>
         <div class="user-info-subbox">
-            <div class=" user-info__label">가입일 : </div>
+            <div class=" user-info__label">가입일시 : </div>
             <div class="user-info">{{userData.regDate}}</div>
+        </div>
+        <div class="user-info-subbox">
+            <div class=" user-info__label">내책장에 추가된 책 : </div>
+            <div class="user-info">{{userData.myBook|length}}권</div>
         </div>
     </div>
 

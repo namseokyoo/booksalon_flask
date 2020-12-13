@@ -36,3 +36,31 @@
 .publisher {
     font-size: 12px;
 }
+
+.my_bookshelf {
+    font-size: 18px;
+    display: flex;
+    color: var(--blue);
+}
+
+.set_my_bookshelf {
+    width: 100px;
+    height: 25px;
+    background-color: var(--blue);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+    font-size: 12px;
+    margin: 0;
+    display: none;
+}
+
+.is_my_bookshelf {
+    display: none;
+}
+
+.checkbookshelf_show {
+    display: inline-block;
+}

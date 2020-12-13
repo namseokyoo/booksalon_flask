@@ -160,12 +160,47 @@ def mypage():
         userData = list(db.user.find({'userId': userId}))[0]
         return render_template('user/mypage.html', userData=userData)
     else:
-        return '로그인 하고 오셈'
+        return '로그인하시길 바랍니다.'
 
 
 @app.route('/bookshelf')
 def bookshelf():
     return render_template('bookshelf.html')
+
+
+@app.route('/setbookshelfdb', methods=['GET', 'POST'])
+def setbookshelfdb():
+    if request.method == 'GET':
+        return redirect('/')
+    else:
+        isbn = request.form['isbn']
+        t = datetime.now() + timedelta(hours=9)
+        setDate = t.strftime('%Y/%m/%d %H:%M:%S')
+        myBook = {
+            "isbn": isbn,
+            "setDate": setDate,
+        }
+        if 'userId' in session:
+            userId = session.get('userId', None)
+            db.user.update_one({"userId": userId}, {
+                               "$push": {'myBook': myBook}})
+            return jsonify({'result': 'success'})
+
+
+@app.route('/checkbookshelfdb', methods=['GET', 'POST'])
+def checkbookshelfdb():
+    if request.method == 'GET':
+        return redirect('/')
+    else:
+        isbn = request.form['isbn']
+        if 'userId' in session:
+            userId = session.get('userId', None)
+            userData = list(db.user.find(
+                {"userId": userId, "myBook": {"$elemMatch": {"isbn": isbn}}}))
+            if userData == []:
+                return jsonify({'result': 'fail'})
+            else:
+                return jsonify({'result': 'success'})
 
 
 @app.route('/bookboard')
@@ -186,62 +221,68 @@ def bookboard():
 
 @app.route('/write_question', methods=['get', 'post'])
 def write_question():
-    userId = session.get('userId', None)
-    writer = list(db.user.find({'userId': userId}))[0]['userName']
-    param_isbn = request.args['book']
-    book_db = list(db.booklists.find({"isbn": param_isbn}))
-    if book_db == []:
-        book = addbook(param_isbn)
-        db.booklists.insert_one(book)
-    title = list(db.booklists.find({'isbn': param_isbn}))[0]['title']
-    password = list(db.user.find({'userId': userId}))[0]['password']
-    question_title = request.form['question_title']
-    question = request.form['question']
-    t = datetime.now() + timedelta(hours=9)
-    time = t.strftime('%Y/%m/%d %H:%M:%S')
-    q_id = shortuuid.uuid()
-    q = {
-        'q_id': q_id,
-        'isbn': param_isbn,
-        'title': title,
-        'writer': writer,
-        'password': password,
-        'question_title': question_title,
-        'question': question,
-        'post_time': time,
-        'reply': 0
-    }
-    db.questions.insert_one(q)
-    book = list(db.booklists.find({"isbn": param_isbn}))[0]
-    return redirect(f'/detail?book={param_isbn}&qid={q_id}')
+    if request.method == 'GET':
+        return redirect('/')
+    else:
+        userId = session.get('userId', None)
+        writer = list(db.user.find({'userId': userId}))[0]['userName']
+        param_isbn = request.args['book']
+        book_db = list(db.booklists.find({"isbn": param_isbn}))
+        if book_db == []:
+            book = addbook(param_isbn)
+            db.booklists.insert_one(book)
+        title = list(db.booklists.find({'isbn': param_isbn}))[0]['title']
+        password = list(db.user.find({'userId': userId}))[0]['password']
+        question_title = request.form['question_title']
+        question = request.form['question']
+        t = datetime.now() + timedelta(hours=9)
+        time = t.strftime('%Y/%m/%d %H:%M:%S')
+        q_id = shortuuid.uuid()
+        q = {
+            'q_id': q_id,
+            'isbn': param_isbn,
+            'title': title,
+            'writer': writer,
+            'password': password,
+            'question_title': question_title,
+            'question': question,
+            'post_time': time,
+            'reply': 0
+        }
+        db.questions.insert_one(q)
+        book = list(db.booklists.find({"isbn": param_isbn}))[0]
+        return redirect(f'/detail?book={param_isbn}&qid={q_id}')
 
 
 @app.route('/write_reply', methods=['get', 'post'])
 def write_reply():
-    userId = session.get('userId', None)
-    reply_writer = list(db.user.find({'userId': userId}))[0]['userName']
-    q_id = request.args['qid']
-    reply_id = shortuuid.uuid()
-    reply_password = list(db.user.find({'userId': userId}))[0]['password']
-    reply_text = request.form['reply-text']
-    reply_t = datetime.now() + timedelta(hours=9)
-    reply_time = reply_t.strftime('%Y/%m/%d %H:%M:%S')
+    if request.method == 'GET':
+        return redirect('/')
+    else:
+        userId = session.get('userId', None)
+        reply_writer = list(db.user.find({'userId': userId}))[0]['userName']
+        q_id = request.args['qid']
+        reply_id = shortuuid.uuid()
+        reply_password = list(db.user.find({'userId': userId}))[0]['password']
+        reply_text = request.form['reply-text']
+        reply_t = datetime.now() + timedelta(hours=9)
+        reply_time = reply_t.strftime('%Y/%m/%d %H:%M:%S')
 
-    reply_db = {
-        'reply_id': reply_id,
-        'reply_writer': reply_writer,
-        'reply_password': reply_password,
-        'reply_text': reply_text,
-        'reply_time': reply_time,
-    }
-    db.questions.update({"q_id": q_id}, {
-                        "$push": {'reply_db': reply_db}
-                        })
-    db.questions.update({"q_id": q_id}, {
-                        "$inc": {'reply': 1}
-                        })
-    param_isbn = list(db.questions.find({"q_id": q_id}))[0]['isbn']
-    return redirect(f'/detail?book={param_isbn}&qid={q_id}')
+        reply_db = {
+            'reply_id': reply_id,
+            'reply_writer': reply_writer,
+            'reply_password': reply_password,
+            'reply_text': reply_text,
+            'reply_time': reply_time,
+        }
+        db.questions.update({"q_id": q_id}, {
+                            "$push": {'reply_db': reply_db}
+                            })
+        db.questions.update({"q_id": q_id}, {
+                            "$inc": {'reply': 1}
+                            })
+        param_isbn = list(db.questions.find({"q_id": q_id}))[0]['isbn']
+        return redirect(f'/detail?book={param_isbn}&qid={q_id}')
 
 
 @app.route('/write')
@@ -274,37 +315,40 @@ def detail():
 
 @app.route('/check_password', methods=['get', 'post'])
 def check_password():
-    q_id = request.args['qid']
-    type = request.args['type']
-
-    userId = session.get('userId', None)
-    userName_db = list(db.user.find({'userId': userId}))[0]['userName']
-    password = list(db.user.find({'userId': userId}))[0]['password']
-
-    question_db = list(db.questions.find({"q_id": q_id}))[0]
-    userName = question_db['writer']
-    param_isbn = question_db['isbn']
-
-    if type == "reply":
-        reply_id = request.args['reply_id']
-        pw_reply_db = list(db.questions.find(
-            {"reply_db": {"$elemMatch": {"reply_id": reply_id}}}, {"reply_db": {"$elemMatch": {"reply_id": reply_id}}}))[0]['reply_db'][0]['reply_password']
-        if password == pw_reply_db and userName == userName_db:
-            db.questions.update(
-                {"q_id": q_id}, {"$pull": {"reply_db": {"reply_id": reply_id}}}, True, {"multi": True})
-            db.questions.update({"q_id": q_id}, {"$inc": {'reply': -1}})
-            return redirect(f'/detail?book={param_isbn}&qid={q_id}')
-        else:
-            return redirect(f'/detail?book={param_isbn}&qid={q_id}')
+    if request.method == 'GET':
+        return redirect('/')
     else:
-        pw_db = question_db['password']
-        if password == pw_db and userName == userName_db:
-            db.questions.remove({"q_id": q_id})
-            if (list(db.questions.find({"isbn": param_isbn})) == []):
-                db.booklists.remove({"isbn": param_isbn})
-            return redirect(f'/bookboard?book={param_isbn}')
+        q_id = request.args['qid']
+        type = request.args['type']
+
+        userId = session.get('userId', None)
+        userName_db = list(db.user.find({'userId': userId}))[0]['userName']
+        password = list(db.user.find({'userId': userId}))[0]['password']
+
+        question_db = list(db.questions.find({"q_id": q_id}))[0]
+        userName = question_db['writer']
+        param_isbn = question_db['isbn']
+
+        if type == "reply":
+            reply_id = request.args['reply_id']
+            pw_reply_db = list(db.questions.find(
+                {"reply_db": {"$elemMatch": {"reply_id": reply_id}}}, {"reply_db": {"$elemMatch": {"reply_id": reply_id}}}))[0]['reply_db'][0]['reply_password']
+            if password == pw_reply_db and userName == userName_db:
+                db.questions.update(
+                    {"q_id": q_id}, {"$pull": {"reply_db": {"reply_id": reply_id}}}, True, {"multi": True})
+                db.questions.update({"q_id": q_id}, {"$inc": {'reply': -1}})
+                return redirect(f'/detail?book={param_isbn}&qid={q_id}')
+            else:
+                return redirect(f'/detail?book={param_isbn}&qid={q_id}')
         else:
-            return redirect(f'/detail?book={param_isbn}&qid={q_id}')
+            pw_db = question_db['password']
+            if password == pw_db and userName == userName_db:
+                db.questions.remove({"q_id": q_id})
+                if (list(db.questions.find({"isbn": param_isbn})) == []):
+                    db.booklists.remove({"isbn": param_isbn})
+                return redirect(f'/bookboard?book={param_isbn}')
+            else:
+                return redirect(f'/detail?book={param_isbn}&qid={q_id}')
 
 
 @app.route('/recentbooks')

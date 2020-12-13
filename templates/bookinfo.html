@@ -12,5 +12,13 @@
         </span>
         <span class="publisher">출판 | {{book.publisher}}</span>
         <span class="pub_date">출간일 | {{book.pubdate}}</span>
+        <div class="my_bookshelf">
+            <div class="is_my_bookshelf">
+                <i class="fas fa-user-check "></i>
+            </div>
+            <button class="set_my_bookshelf" onclick="setBookshelfDb()">내책장에 추가</button>
+        </div>
     </div>
 </div>
+
+<script type="text/javascript" src="/static/js/bookinfo.js"></script>

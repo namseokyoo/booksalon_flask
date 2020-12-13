@@ -12,7 +12,7 @@
             today: "오늘",
             month: "월",
             week: "주",
-            day: "일",
+            day: "",
             list: "일정목록"
         },
         weekLabel: "주",
