@@ -2,7 +2,7 @@
 function bookboardpage(userName){
     const loginSuccess = document.querySelector('.edit'),
     loginwarning = document.querySelector('.reply_question__text'),
-    delete_reply = document.querySelector('.delete_reply'),
+    delete_reply = document.querySelectorAll('.delete_reply'),
     delete_button = document.querySelector('.delete'),
     submit_button = document.querySelector('.btn-logincheck');
 
@@ -22,7 +22,9 @@ function bookboardpage(userName){
         loginwarning.placeholder='새로운 댓글을 입력하세요.';
         delete_button.style.display = 'flex';
         submit_button.style.display = 'flex';
-        delete_reply.style.display = 'inline';
+        for (let i = 0; i < delete_reply.length; i++) {
+            delete_reply[i].classList.toggle('delete_reply_show');
+        }
     }
 
 }

@@ -26,6 +26,10 @@
     display: none;
 }
 
+.delete_reply_show {
+    display: inline-block;
+}
+
 i {
     margin-right: 5px;
 }
