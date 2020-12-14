@@ -168,6 +168,17 @@ def bookshelf():
     return render_template('bookshelf.html')
 
 
+@app.route('/loadbookshelfdb')
+def loadbookshelfdb():
+    event = [{
+        'title': 'event1',
+        'start': '2020-12-14',
+        # 'end': '2020-12-16'
+        'image_url': 'https://image.yes24.com/goods/92344650/800x0'
+    }]
+    return jsonify(event)
+
+
 @app.route('/setbookshelfdb', methods=['GET', 'POST'])
 def setbookshelfdb():
     if request.method == 'GET':

@@ -19,9 +19,9 @@
 @import "component/boardtitle.css";
 @import "component/user.css";
 
-@import "core/main.css";
+@import "main.css";
 /* @import "core/main.min.css"; */
-@import "daygrid/main.css";
+/* @import "daygrid/main.css"; */
 /* @import "daygrid/main.min.css"; */
 
 * {
